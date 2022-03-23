@@ -1,0 +1,107 @@
+.form-controll {
+    display: inline-block;
+    width: 49%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    margin-bottom: 5px;
+    margin-left: ;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.containerr {
+    margin-top: 50px;
+    width: 64%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+.top2{
+    padding-top: 150px;
+}
+
+
+.fundo{
+    background: rgba(214, 248, 230, 0.5);
+    padding: 10px;
+    width: 83%;
+}
+
+
+
+
+@media screen and (max-width: 780px){
+ .fundo{
+    width: 195%;
+ }
+
+
+.top2{
+    padding-top: 172px;
+}
+
+}
+
+
+table td{
+    text-align: center;
+}
+
+/******botão checkbox******/
+
+    .liga-desliga-checkbox{
+            display: none;
+        }
+
+        .liga-desliga-botao{
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .liga-desliga-botao::before,
+        .liga-desliga-botao::after
+        {
+            content: "";
+
+            transition: all 0.3s;
+        }
+
+        .liga-desliga-botao::before{
+           background: #8c7d7d;
+           display: inline-block;
+           width: 2em;
+           height: 1em;
+           border-radius: 1em;
+        }
+
+        .liga-desliga-botao::after{
+           background: white;
+           border-radius:100%;
+           position: absolute;
+           top: 3px;
+           left: 0.025em;
+           width: 0.95em;
+           height: 0.95em;
+        }
+
+
+        .liga-desliga-checkbox:checked ~ .liga-desliga-botao::before{
+            background: green;
+        }
+
+        .liga-desliga-checkbox:checked ~ .liga-desliga-botao::after{
+          left: 1.025em;
+        }

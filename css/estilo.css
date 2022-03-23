@@ -1,0 +1,251 @@
+html,body{
+	overflow: hidden;
+}
+body{
+	background: url(../img/aaaa.png);
+	background-size: cover;
+}
+/** login**/
+.adf{
+	width: 700px;
+	height:500px;
+	margin: 0 auto;
+	margin-top: 120px;
+	border-radius: 5px;
+	background:rgba(0,0,0,0.1);
+   animation: aparecer 8s forwards ;
+   position: relative;
+   /*box-shadow: 1px 1px 9px #828282;*/
+}
+
+/***tokken***/
+.adf4{
+	width: 407px;
+    height: 302px;
+	margin: 0 auto;
+	margin-top: 120px;
+	border-radius: 5px;
+	background:rgba(0,0,0,0.2);
+   animation: aparecer 8s forwards ;
+   position: relative;
+   /*box-shadow: 1px 1px 9px #828282;*/
+}
+
+
+.logo {
+    position: absolute;
+    top: 163px;
+    margin-left: 130px;
+    font-size: 118px;
+}
+.logo2{
+	margin-top: 35%;
+}
+
+input.user{
+	background-image: url(../img/1.png);
+}
+
+input.pass{
+	background-image: url(../img/2.png);
+}
+
+/***cadastre***/
+.adf2{
+    width: 420px;
+	height:367px;
+	margin: 0 auto;
+	margin-top: 95px;
+	border-radius: 0px;
+	background:rgba(0,0,0,0.2);
+	animation: aparecer 8s forwards ;
+   position: relative;
+}
+
+/*******geral*************/
+input{
+
+	font-size: 18px;
+	margin-bottom: 10px ;
+	background-color: #fff;
+	border-radius: 20px;
+	background-repeat: no-repeat;
+	background-position: 10px;
+	cursor: pointer;
+}
+
+
+
+.aa{
+	text-indent: 30px;
+	border-radius: 40px;
+}
+
+/*******Barra de progresso + animação********/
+.bar{
+	margin-top: 50%;
+}
+.bar2{
+	margin-top: 5%;
+}
+.containerr{
+   height: 5px;
+   background-color: #ccc;
+   position: relative;
+   border-radius: 7px;
+   width: 70%;
+   margin:0 56px 0;
+  animation: sumi 15s forwards;
+}
+
+
+.containerr .progress-bar{
+	position: absolute;
+	height: 100%;
+	border-radius: 7px;
+	background: #35fd21;
+	animation: loading 3s forwards/*infinite*/;	
+}
+
+.adf20{
+	width: 380px;
+	height:300px;
+	margin: 0 auto;
+	margin-top: 120px;
+	border-radius: 30px;
+	animation: centro 5s forwards ;
+	position: relative;
+	
+
+}
+
+@keyframes loading {
+	0% { width: 0;}
+	100% {width: 100%;}
+}
+
+@keyframes sumi {
+	 from{
+
+	 	top: -450px; }
+	 
+	 to{
+       bottom: -3000px; }
+}
+
+@keyframes aparecer{
+    from{
+    	top: -3000px;
+    }
+    to{
+        top: 0px; }
+}
+
+.btn-block {
+    display: block;
+    width: 80%;
+    border-radius: 1.25rem;
+    margin-left: 10%;
+}
+
+@font-face{
+	src:url(../font/Hargita.woff);
+	font-family: adf;
+}
+
+@font-face{
+	src:url(../font/custom2.woff);
+	font-family: adf2;
+}
+
+h5{
+	color: white;
+	font-size: 45px;
+	}
+
+
+	.form-control {
+    display: block;
+    width: 80%;
+     margin-left: 10%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-clip: padding-box;
+    border: none;
+    border-radius: 1.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+
+@media screen and (max-width: 780px){
+    body{
+    	background: url(../img/yellow.png);
+    }
+   .adf{
+    width: 330px;
+    height: 348px;
+    margin: 0 auto;
+    margin-top: 120px;
+    border-radius: 5px;
+    background:rgba(0,0,0,0.2);
+    animation: aparecer 8s forwards;
+    position: relative;
+    transition: 0s all;
+    /* box-shadow: 1px 1px 9px #828282; */
+}
+.logo3 {
+    position: absolute;
+    top: -299px;
+    margin-left: 133px;
+    font-size: 0px;
+    transition: 0s all;
+}
+
+.logo{
+	display: none;
+}
+  .logo2{
+	margin-top: 15%;
+}
+
+.one{
+	display: none;
+}
+
+#bloco2{
+	display: none;
+}
+
+.col-md-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 101%;
+    max-width: 104%;
+}
+
+.bar{
+	margin-top: 50%;
+}
+
+.bar2{
+	margin-top: 50%;
+}
+.adf4 {
+    width: 328px;
+    height: 290px;
+}
+
+.adf2{
+    width: 288px;
+	height:367px;
+}
+
+
+.containerr .progress-bar{
+	background: black;
+}
+
+
+}

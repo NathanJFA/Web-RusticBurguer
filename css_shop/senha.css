@@ -1,0 +1,32 @@
+
+
+#senha{
+	padding-top: 100px;
+	margin: 100px auto;
+	border: 1px solid black;
+}
+
+.top{
+    padding-top: 200px;
+    }
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    justify-content: center;
+    margin-left: -15px;
+    flex-direction: row;
+}
+
+
+.recuperar{
+    margin-bottom: 90px;
+    margin-top: 20px;
+}
+
+footer{
+    bottom: 0;
+}

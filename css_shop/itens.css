@@ -1,0 +1,115 @@
+
+/***********margin sobre a lupa**********/
+#car{
+	padding-top: 82px;
+}
+
+ /*****************todo bloco para fazer a comprar******/
+
+.informacao{
+	margin-top: 70px;
+    margin-left: 19px;}
+
+
+
+/*********oculta checkbok*********/
+input[type='checkbox']{
+	display: none;
+}
+
+/*********label do checkbox***********/
+label{
+	cursor: pointer;
+}
+
+
+
+/*********font custom*******/
+
+@font-face{
+	src: url('../font/MarketDeco.woff');
+	font-family: mark ;
+}
+
+
+@font-face{
+	src: url('../font/Cavalier-Regular.woff');
+	font-family: cav;
+}
+
+
+
+h2 , h3 ,h4{
+	font-family: cav;
+letter-spacing: 5px;}
+
+
+
+/*************rodapé**********/
+
+footer{
+	width: 100%;
+	position: relative;
+}
+
+.rodape5{
+    background: black;
+    color: white;
+    padding-top: 42px;
+    z-index: 898;
+    text-align: center;
+    bottom: 0px;
+}
+
+/**carrouseul img**/
+.carousel-item img {
+    vertical-align: middle;
+    border-style: none;
+    width: 547px;
+    height: 445px;
+
+}
+
+#carouselbordar {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 7px;
+    box-shadow: 0px 0px 6px #969696;
+    background: white;
+}
+
+
+/**********correções de bug na tela do smartphone************/
+
+@media screen and (max-width: 780px){
+
+	#car{
+	padding-top: 142px;
+}
+	.nav_bar{
+		margin-top: 80px;
+		position: fixed;
+	}
+
+	.mobile_nav_items{
+		padding-top: 144px;
+	}
+
+	.lupa2{
+		padding-top: 8px;
+	}
+
+	/**carrouseul img**/
+   
+  .carousel-item img {
+   
+    border-style: none;
+    width: 352px;
+    height: 445px;
+    margin-left: 0px;
+    
+}
+
+
+} 

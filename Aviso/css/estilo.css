@@ -1,0 +1,52 @@
+   	#dimensao{
+   	
+   		margin: 0 auto;
+   		display: flex;
+   		padding-top: 190px;
+   		justify-content: center;
+   	}
+    img{
+      margin-left: 79px;
+    }
+
+    .adf20{
+    width: 380px;
+    height:300px;
+    margin: 0 auto;
+    margin-top:0px;
+    border-radius: 30px;
+    animation: centro 5s forwards ;
+    position: relative;
+    
+
+}
+
+.containerr{
+   height: 5px;
+   background-color: #ccc;
+   position: relative;
+   border-radius: 7px;
+   width: 70%;
+   margin:0 56px 0;
+  animation: sumi 15s forwards;
+}
+
+
+.containerr .progress-bar{
+    position: absolute;
+    height: 100%;
+    border-radius: 7px;
+    background: black;
+    animation: loading 3s forwards/*infinite*/; 
+}
+.bar{
+    margin-top: 50%;
+}
+.bar2{
+    margin-top: 5%;
+}
+@keyframes loading {
+    0% { width: 0;}
+    100% {width: 100%;}
+}
+

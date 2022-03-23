@@ -1,0 +1,219 @@
+#inicio{
+	margin-top: 40px;
+	margin-bottom:40px;
+}
+
+
+
+/*******lista***********/
+
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+
+li a:hover{
+	text-decoration: none;
+	background: #e8f8fc;
+	color: #000000;
+}
+
+
+.grupo{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: justify;
+	height:;
+	width: 100%;
+}
+
+
+li a{
+	display: block;
+	line-height: 46px;
+	border-bottom: 1px solid #c6c7c5;
+	border-top:1px solid #c6c7c5;
+	border-right: 1px solid #c6c7c5;
+	color: black;
+	font-size: 14px;
+	padding-left: 14px;}
+
+/***************boas vinda*************/
+@font-face{
+	src: url('../../../font/Cavalier-Bold.woff2');
+	font-family: cav2;
+}
+
+
+h6{
+	font-family: cav2;
+	font-size: 16px;
+	font-weight: 900;
+}
+
+span.text{
+	color: #838bc7;
+	border-bottom: 1px dotted  #838bc7;
+}
+
+
+
+/*************blocos************/
+.blocos{
+    border: 1px solid black;
+    width: 260px;
+    height: 192px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+
+.blocos h5{
+	font-size: 15px;
+}
+
+.blocos i {
+	font-size: 35px;
+}
+
+
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+a:hover{
+	text-decoration: none;
+	color: black;
+}
+
+/**********borda table informação*******/
+
+.tabela_info{
+	margin-top: 51px;
+
+}
+.table-bordered td {
+    border-bottom: 1px solid #9aabab;
+}
+
+th{
+	font-size: 12px;
+}
+
+td{
+	font-size: 12px;
+}
+
+/****************card***************/
+
+.card{
+	margin-top: 51px;
+	border: none;
+}
+
+.card h3{
+	border-bottom: 1px solid black;
+}
+
+.credito{
+	padding-bottom: 40px;
+}
+
+.debito{
+	padding-bottom: 0px;
+}
+
+.troca{
+	padding-bottom: 40px;
+}
+/************pedidos***************/
+.pedido{
+	margin-top: 6px;
+}
+
+.pedido h3{
+	border-bottom: 1px solid black;
+}
+
+/****************trocar ou devolução**********/
+.troca{
+	margin-top: 51px;
+}
+
+.trocar h3{
+	border-bottom: 1px solid black;
+}
+/***********marcador de pagina*********/
+
+body#info a.info, #Iniciof a.iniciof, #Card a.cArd, #Ped a.ped,#End a.enD, #Tro a.tro{
+  background: #e8f8fc;
+}
+
+
+/********Menu resposivo para smartphone**********/
+
+@media screen and (max-width: 780px){
+
+    .rodape{
+    	margin-bottom: -1822px}
+    }}
+
+
+
+
+
+
+footer{
+    width: 105%;
+    margin-left: -20px;
+    position: absolute;
+    z-index: 1;
+
+}/********Menu resposivo para smartphone**********/
+
+@media screen and (max-width: 780px){
+
+    .rodape4{
+    	margin-bottom: -1822px}
+    }
+
+
+
+footer{
+    width: 105%;
+    margin-left: -20px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: -400px;
+
+}
+
+.rodape4{
+	background: black;
+	color: white;
+	padding-top: 42px;
+	z-index: 898;
+	text-align: center;
+	bottom: -70px;
+
+
+}
+
+.code{
+	background: url(../../img/capa0.png),
+    url(../img/ruido.png),
+    linear-gradient(50deg,#000000,#150602);
+	color: white;
+	padding: 20px;
+	width: 100%;
+	text-align: center;
+}
+

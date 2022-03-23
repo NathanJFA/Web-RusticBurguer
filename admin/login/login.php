@@ -1,0 +1,99 @@
+<?php
+/*
+if(isset($_SESSION['user_logado'])){
+  header("location = ../../index.php");
+}
+*/
+?>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/estilo.css">
+
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+       <link rel="icon" href="../../img/lock.png">
+
+       <!--Script provisorio-->
+       <script src="../../js/script.js"></script>
+
+    <title>Login</title>
+  </head>
+<body>
+              <div class="container"><!--inicio container-->
+              <div class="adf"><!--inicio adf-->
+              <div class="row"><!--inicio row-->
+              <div class="col-md-6"><!--inicio col-->
+
+                <div class="text-center"><!--inicio text-->
+                     <i class="fas f-user-circle logo" style="font-size: 80px"></i>
+                     
+                <form class="logo2">
+                
+                <center><h4 class="  mb-4 text-white" style="font-family: adf2">Bem Vindo!</h4></center>
+             <input type="text" name="" class="form-control user aa is-valid" placeholder='Usuario'  autofocus="autofocus" required="required" id="name">
+
+               <!--alertas-->
+                      <small class="valid-feedback ml-5 mb-2 text-left">Nome de usúario correto!</small>
+                      <small class="invalid-feedback d-none ml-5 mb-2 text-left">Nome de usúario incorreto ou não existe!</small>
+                      
+               <input type="password" name="" class="form-control pass aa is-valid" placeholder='********' id="senha" required="required">
+
+                   <!--alertas-->
+                      <small class="valid-feedback ml-5 text-left">Senha correto!</small>
+                      <small class="invalid-feedback d-none ml-5 text-left">Senha incorreta!</small>
+
+              <button type="button" class="btn btn-block btn-dark mb-2" onclick="verificar()">Logar</button>
+
+               <small><a href="../cadastre/cadastre.html" class="text-light">Inscreve-se <i class="far fa-user"></i></a></small>
+
+                </form>
+              </div><!--fim text-->
+              </div><!--fim col-->
+              <div class="col-md-6">
+                <img src="../../img/cof.png" class="one">
+                <i class="fas fa-user-circle text-light logo logo3" ></i>
+              </div>
+              </div><!--fim row-->
+              </div><!--fim adf-->
+              </div><!--fim container-->
+ <!---->     
+           <!--barra de progresso-->
+              <div class="container"><!--inicio container-->
+                  <div class="row"><!--inicio row-->
+                  <div class="adf20"><!--inicio adf20-->
+                  <div class="col-md-12"><!--inicio col-->
+              <!--animação-->
+                  <div class="containerr">
+                  <div class="bar2">
+                  <div class="progress-bar"> </div>
+                  </div>
+                  </div>
+                <!--fim animação-->
+                
+                  </div><!--fim col-->
+                  </div><!--fim adf-->
+                  </div><!--fim row-->
+              </div><!--Fim container-->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!--<script src="js/bootstrap.bundle.min.js"></script>-->
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

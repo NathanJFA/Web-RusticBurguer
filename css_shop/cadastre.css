@@ -1,0 +1,99 @@
+body{
+    overflow: none;
+}
+
+#Login22 {
+    /* border: 1px solid black; */
+    padding: 10px;
+    margin: 0 auto;
+    padding-top: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.form2{
+    display: inline-block;
+    width: 25%;
+    margin-top: 10px;
+}
+
+label.sp{
+    font-size: 15px;
+}
+
+
+.row{
+    display: flex;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+
+#J:checked ~ #pessoaF{
+    display:none;
+}
+
+#F:checked ~ #pessoaJ{
+    display: none;
+}
+
+#I:checked ~ #I{
+    display: none;
+}
+
+
+footer{
+    width: 100%;
+    margin-left: 0px;
+    z-index: 1;
+    /* bottom: -209px;*/
+    position: absolute;
+}
+.rodape3{
+
+    background: black;
+    color: white;
+    padding-top: 42px;
+    z-index: 898;
+    text-align: center;
+}
+
+.code{
+   background: url(../img/capa0.png),
+                  url(../img/ruido.png),
+                  linear-gradient(50deg,#000000,#150602);
+    color: white;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 780px){
+
+#Login22 {
+    /* border: 1px solid black; */
+    padding: 10px;
+    margin: 0 auto;
+    padding-top: 94px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+
+
+.nav_bar {
+    background: #282923;
+    width: calc(100% - 0%);
+    margin-top: 32px;
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9000;
+}
+}

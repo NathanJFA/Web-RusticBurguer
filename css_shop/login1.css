@@ -1,0 +1,93 @@
+/*.centro{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-left: 31%;
+}*/
+body{
+
+}
+#Login{
+	/*width: 509px;*/
+	/*border: 1px solid black;*/
+	padding: 37px;
+	margin: 0 auto;
+	border-radius: 10px;
+	margin-bottom: 40px;
+
+}
+.row{
+    display: flex;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.logoShop{
+    text-decoration: none;
+}
+.logoShop:hover{
+    text-decoration: none;
+}
+
+/**************Oculta login***********/
+
+/*#check5:checked ~ #Login{
+	display: none;
+}
+
+.oculta_login{
+    width: 509px;
+    background: #dddddd;
+    height: 43px;
+}*/
+
+
+/***********esqueçeu senha************/
+
+
+.cor{
+    background: red;
+
+}
+
+#sen{
+    display: none;
+}
+
+#none:checked ~ #senha{
+    display: none;
+}
+
+
+#none{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 780px){
+    #Login{
+    /*width: 509px;*/
+    /*border: 1px solid black;*/
+    padding: 37px;
+    padding-top: 120px;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 40px;
+
+}
+
+ .nav_bar {
+    background: #282923;
+    width: calc(100% - 0%);
+    margin-top: 32px;
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9000;
+}
+}

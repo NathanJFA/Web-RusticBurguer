@@ -1,0 +1,121 @@
+footer{
+    width: 100%;
+    margin-left:0px;
+    position: relative;
+    z-index: 1;
+   }
+
+#CARRAO{
+     margin-bottom: 72px;
+}
+
+#top {
+    /*border: 1px solid red;*/
+    padding-top: 50px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+
+#carrinho {
+    background: #f1f1f1;
+    padding: -1px;
+    padding-left: 13px;
+    /* margin-top: 0%; */
+    padding-top: 13px;
+    margin-bottom: 16px;
+    padding-right: 13px;
+    box-shadow: 0px 0px 5px #797979;
+    /* margin-top: 4pc; */
+}
+
+.rodape66 {
+    background: black;
+    color: white;
+    padding-top: 42px;
+    z-index: 898;
+    text-align: center;
+}
+
+.code {
+    background: #ffffff;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+background: url(../img/capa0.png),
+                  url(../img/ruido.png),
+                  linear-gradient(50deg,#bc2b0e,#9c2109) ;
+      color: white;
+}
+
+/*********produtos no carrinho ***********/
+
+
+.produtoAd{
+	display: flex;
+	align-items: flex-start;
+ width: 100%;
+ /* border: 1px solid red;*/
+}
+
+.titulo{
+	font-size: 0.7rem;
+    line-height: 0.75rem;
+    width: ;
+    padding-right: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #5b5b5b;
+    display: flex;
+	align-items: flex-start;
+}
+ td img{
+	width: 120px;
+	height: 120px;
+	display: flex;
+	align-items: flex-start;
+}
+
+.input{
+	width: 90px !important;
+    display: inline-block;
+    margin-right: 0px;
+    margin-left: -110px;
+    margin-top:26px;
+    position: relative;
+    display: flex;
+	align-items: flex-start;
+}
+
+.label-input{
+	margin-left: 11px;
+    margin-top: 29px;
+    position: relative;
+    display: flex;
+	align-items: flex-start;
+}
+
+.form{
+	width: 100px;
+}
+
+@media screen and (max-width: 780px){
+	
+     #top{
+           padding-top: 100px;
+     }
+
+     .nav_bar{
+        background: #282923;
+        width: calc(100% - 0%);
+        margin-top: 8px;
+        display: flex;
+        padding: 10px 20px;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 9000;
+    }
+
+}

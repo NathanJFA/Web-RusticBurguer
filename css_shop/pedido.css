@@ -1,0 +1,14 @@
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: .75rem 1.25rem;
+    background-color: #fff;
+    border-bottom: 1px solid rgb(65 9 9 / 13%);
+
+    border-bottom: 2px solid red;
+}
+
+
+#loc{
+    margin: 20%;
+}

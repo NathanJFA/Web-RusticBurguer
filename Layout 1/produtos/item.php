@@ -1,0 +1,267 @@
+<?php
+  session_start();
+  if(isset($_GET['exit']) && $_GET['exit'] == 'true'){
+    $_SESSION['autenticado'] = "false";
+    $_SESSION['user_logado'] = "";
+  }
+?>
+<!DOCTYPE html>
+<html lang='pt-br'>
+<head>
+  <meta charset="utf-8">
+  <title>Hamburger Artesanal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   <!--estilo customizado-->
+   <link rel="stylesheet" type="text/css" href="../../css_shop/estilo.css">
+   <link rel="stylesheet" type="text/css" href="../../css_shop/login1.css">
+   <link rel="stylesheet" type="text/css" href="../../css_shop/itens.css">
+   <link rel="stylesheet" type="text/css" href="../../css_shop/bodycor.css">
+   <!--icon-->
+   <script src="https://kit.fontawesome.com/32858d8fc9.js" crossorigin="anonymous"></script>
+   <!--htmlshiv-->
+   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js">
+   <!--normalize-->
+   <link rel="stylesheet" type="text/css" href="css_shop/normalize.css">
+
+</head>
+<body>
+     
+  <!--Cabeçalho-->
+        <!--bottão oculta menu-->
+        <input type="checkbox" id="check" checked="true" >
+      <header>
+         <label for="check">
+          <i class="fas fa-bars" id="sidebar_btn"></i> 
+         </label>
+         <div class="esquerda_area">
+          <a href="../index.php" class="logoShop">
+         <img src="../img/logo2.png" width="171">
+          <h3 class="d-none">Hamburger <span>Artesanal</span></h3>
+          </a>
+         </div>
+
+         <div class="carrinho_icon"><!--Carrinho-->
+          <a href="../carrinho.php"><i class="fas fa-shopping-cart text-light"></i> <small class="badeg_carrinho"><span class="car">0</span> itens</small></a>
+         </div><!--fim carinho-->
+
+         <?php 
+             //VERIFICANDO O LOGIN
+             if(!isset($_SESSION['autenticado']) || $_SESSION['autenticado'] != "true"){
+          ?>
+
+          <div class="botao_right container">
+             <a href="../login_cliente.php" class="nav-link text-light">Entrar</a> 
+          </div>
+          
+          <?php
+             }else{
+          ?>
+
+         <div class="botao_right dropdown"><!--inicio btn-right-drop-->
+             <!--Menu Dropdown-->
+            <a href="../login_cliente.php" class="nav-link dropdown-toggle text-light" data-toggle="dropdown">Olá, <?php echo($_SESSION['user_logado']) ?></a> 
+            
+                  <div class="dropdown-menu">
+                    <a href="../central_controle/index.php" class="dropdown-item">Menu</a>
+                    <a href="../central_controle/pedidos.php" class="dropdown-item">Meus Pedidos</a>
+                    <a href="../central_controle/feedback.php" class="dropdown-item">feedback</a>
+                    <a href="../carrinho.php" class="dropdown-item">Meu carrinho</a>
+                    <a href="../central_controle/info.php" class="dropdown-item">Informações da Conta</a>
+                    <a href="../central_controle/endereco.php" class="dropdown-item">Meus Endereços</a>
+                    <a href="../central_controle/card.php" class="dropdown-item">Cartões e Vales</a>
+                    <a href="../index.php?exit=true" class="dropdown-item">Sair</a>
+                  </div>
+          <?php } ?>
+      </header>
+      <!--Fim Cabeçalho-->
+   
+      <!--Nav para smartphones-->
+      <input type="checkbox" id="check2" checked="true">
+          <div class="mobile_nav" style="overflow: hidden; z-index: 900;">
+            <div class="nav_bar">
+          
+           <div class="carrinho_ico2">
+          <a href="../../Layout 1/carrinho.php"><i class="fas fa-shopping-cart text-light"></i> <small class="badeg_carrinho"><span class="car">0</span> itens</small></a>
+           </div>
+
+           <label for="check2">
+           <i class="fas fa-bars nav_btn"></i>
+           </label>
+            </div>
+            <div class="mobile_nav_items" style="overflow-y: hidden;z-index: 9000">
+         
+         <a href="#"><span>NaN</span></a>
+         <a href="#"><span>NaN</span></a>
+         <a href="#"><span>NaN</span></a>
+         <a href="#"><span>NaN</span></a>
+         <a href="#"><span>NaN</span></a>
+         
+            
+            </div>
+          </div>
+      <!--Fim Nav para smartphones-->
+      
+      <!--Inicio side bar-->
+      <div class="sidebar">
+         <div class="profile_img">
+          <h4 style="font-family: adf"></h4>
+         </div>
+         <a href="#"><span>NaN</span></a>
+         <a href="#"><span>NaN</span></a>
+         <a href="#"><span>NaN</span></a>
+         <a href="#"><span>NaN</span></a>
+         <a href="#"><span>NaN</span></a>
+         
+      </div>
+
+        <!--Animação-->
+        
+
+      <div class=" container" id="car"><!--inicio content-->
+               
+               <!--*********************** D E S A T I V A D O************************-->
+               <div class="mt-3 lupa d-none"><!--pesquisar desativado-->
+               <input type="search" class="pesquisa " placeholder="O que você procurar ?">
+               <button class="btn btn-dark lup"><i class="fas fa-search"></i></button>
+               </div><!--fim pesquisar-->
+             <!--************ F I N A L . D E S A T I V A D O************************-->
+              
+             <div id="background"><!--div fundo-->
+             <div class="row mt-5">
+               <div col-md-6 mt-5><!--col1-->
+                 <div  id="dant" class="carousel" data-ride="carousel"><!--carousel-->
+                         <!--indicadores-->
+                            <ol class="carousel-indicators">
+                            <li data-target="#dant" data-slide-to="0" class="active"></li>
+                            <li data-target="#dant" data-slide-to="1"></li>
+                            <li data-target="#dant" data-slide-to="2"></li>
+                            </ol>
+
+                 <div class="carousel-inner" id="carouselbordar"><!--inicio inner-->
+                      <div class="carousel-item active">
+                      <img src="https://s2.glbimg.com/IaEnP49buSdSUDftlMxVrq3-ZDo=/940x523/e.glbimg.com/og/ed/f/original/2019/04/26/loucosporti1.jpg">
+                      </div>
+                      
+                      <div class="carousel-item">
+                      <img src="https://www.codemoney.com.br/site2017/wp-content/uploads/2019/09/as-melhores-hamburguerias-de-florianopolis-sc-1600x800-c-center.jpg">
+                      </div>
+                      
+                      <div class="carousel-item">
+                      <img src="http://dopaoaocaviar.com.br/wp-content/uploads/2015/08/holly.jpg" class="fluid">
+                      </div>
+                      
+                      </div><!--fim inner-->
+                          
+                          <!--button-->
+                      <a href="#dant" class="carousel-control-prev" data-slide="prev"> <span class="carousel-control-prev-icon"></span></a>
+
+                      <a href="#dant" class="carousel-control-next" data-slide="next"> <span class="carousel-control-next-icon"></span></a>
+                    </div><!--fimcarousel-->
+                    </div><!--fimcol1-->
+               <div class="col-md-5 col-sm-12"><!--col2-->
+                 
+                 <div class="informacao"><!--informação do produto-->
+                   <h3>Titulo</h3>
+                  <p>Descrição</p>
+                  <hr>
+                   <h2 class="lead"><small>por</small> R$ 00,00 </h2>
+                  
+                     
+
+                      <!--************ D E S A T I V A D O *************-->
+                   <!--cor-->
+                   <div class="d-none">
+                   <label for="cor1 cor2 cor3"><small>Cor</small></label>
+                  <input type="checkbox" name="" id="cor1">
+                  <label for="cor1"><i class="fas fa-circle"></i></label>
+
+                  <input type="checkbox" name="" id="cor2">
+                  <label for="cor2"><i class="fas fa-circle text-primary"></i></label>
+
+                  <input type="checkbox" name="" id="cor3">
+                  <label for="cor3"><i class="fas fa-circle text-danger"></i></label>
+                 </div>
+                  <!--fim cor-->
+                  <!--************ F I N A L . D E S A T I V A D O *************-->
+                 
+                 <label for="tamanho">Tamanhos</label>
+                  <select  class="form-control form-control-sm" id="tamanho">
+                    <option value="Medio">Medio</option>
+                    <option value="Grande">Grande</option>
+                    <option class="Extra Grande">Extra Grande</option>
+                  </select>
+
+
+                  <br>
+
+                   <label for="T"><h4>Escolhas</h4></label>
+                   <select id="T" class="form-control form-control-sm">
+                     <option value="M">com queijo</option>
+                     <option value="G">sem saladas</option>
+                     <option value="p">sem queijo e salada</option>
+                     <option value="GG">completo</option>
+                   </select>
+                   <button class="btn btn-dark2 btn-block mt-3" id="">Comprar</button>
+                   <button class="btn btn-outline-dark btn-block mt-3" id="">Adicionar ao carrinho</button>
+                 </div>
+
+
+               </div><!--fimcol2-->
+             </div><!--Fim row-->
+
+             <div class="row mt-5"><!--informações-->
+                <div  class="col-md-12">
+                  <div><!--detalhes-->
+                  <h4>Detalhes do lanche</h4>
+                   <p>decrição...</p>
+                 </div>
+                  <div><!--informações do produto-->
+                    <h4>Informações</h4>
+                    <p>Nome <span></span></p>
+                    <p>acompanha<span></span></p>
+                    <p><span></span></p>
+                  </div>
+                </div>
+             </div><!--fim informações-->
+             </div><!-- fim div fundo-->
+
+      </div><!--fim content-->
+       
+        <footer class="rodape5" style="overflow: hidden;">
+
+              <div class="container"><!--container footer-->
+              <div class="row"><!--row footer-->
+              <div class="col-md-4">
+              <h6>Contato</h6>
+              <p><i class="fas fa-envelope"></i> code_cafe@gmail.com</p>
+              <p><i class="fas fa-phone"></i> +55 000 000000000</p>
+              </div>
+              <div class="col-md-4">
+              <h6>Redes Sociais</h6>
+              <div style="font-size: 35px;">
+              <i class="fab fa-whatsapp mr-2"></i>
+              <i class="fab fa-facebook-f mr-2"></i>
+              <i class="fab fa-twitter"></i>
+              </div>
+              </div>
+              <div class="col-md-4">
+              <h6>Code + Café</h6>
+              <p>Revolucionando..</p>
+              </div>
+              </div><!--fim row footer-->
+
+              </div><!--fim container footer-->
+              <div class="code"> <!--copy-->
+              &copy; Code + Café todos os direitos reservados.
+              </div><!--copy fim-->
+      </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

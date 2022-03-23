@@ -1,0 +1,135 @@
+  #alinhamento{
+      display: flex;
+     justify-content: center;
+     padding-top: 70px;
+     text-align: center;
+     margin-bottom: 70px;
+     /*border: 1px solid black;*/
+     }
+
+     #contain{
+      /*border: 1px solid red;*/
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0px 0px 5px #c0bebe;
+      background: #fefefe;
+     }
+
+     @font-face{
+
+      font-family: font0;
+       src: url(font/font0.woff);
+     }
+
+     @font-face{
+
+      font-family: font1;
+       src: url(font/font1.woff);
+
+     }
+
+     /***********font rustic**********/
+
+      @font-face{
+        src: url(../font/rustic.woff);
+        font-family: rustic;
+      }
+
+     h3.fonth3{
+      font-family: font1;
+      font-size: 50px;
+     }
+
+     h4{
+      font-family: rustic;
+      
+     }
+
+     img{
+      height: 363px;
+      width: 100%;
+     }
+
+    header{
+      background: url(../img/capa0.png),
+                  url(../img/ruido.png),
+                  linear-gradient(50deg,#bc2b0e,#9c2109) ;
+      color: white;
+      border-bottom: 8px solid black;
+      text-align: center;
+      color: white;
+      padding: 20px;
+      height: 79px;
+    }
+
+    .animes{
+      position: absolute;
+     transition: all 5s;
+     animation:bemvindo 3s forwards;
+
+    }
+
+    .animes h4{
+      font-size:32px;
+    }
+
+    footer{
+      position: relative;
+      bottom: 0;
+      background: black;
+      color: white;
+    }
+
+    .rodape{
+      border-top: 1px solid white;
+      padding-top: 42px;
+      text-align: center;
+    }
+
+    .code{
+        background: url(../img/capa0.png),
+                  url(../img/ruido.png),
+                  linear-gradient(50deg,#bc2b0e,#9c2109) ;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    @keyframes bemvindo{
+      from{
+        left: -3000px;
+        top: 13px;
+      }
+      to{
+        /*left: 30%;*/
+        left: 40%;
+      }
+}
+
+@media (max-width: 3000px) {
+     .mobile{
+      display:none;
+     }
+}
+
+
+@media screen and (max-width: 780px){
+ 
+     .animes{
+      display: none;
+     }
+      .animes h4{
+        font-family: font0;
+       font-size: 16px;
+  }
+   .mobile{
+    padding-top: 5px;
+    display: block;
+   }
+
+   h3.fonth3 {
+    font-family: font1;
+    font-size: 42px;
+}
+
+}
