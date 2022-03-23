@@ -124,16 +124,16 @@
                       
 
 
-                      <form id="pessoaF" action = "credenciais.html?intention=register" method = "post"> <!--pessoaFisica-->  
+                      <form id="pessoaF" action = "../js/controler.js" method = "post"> <!--pessoaFisica-->  
                       
                       <label for="nome" ><small>Nome</small></label>
-                      <input type="text" name = "nome" class="form-control form-control-sm" id="nome" placeholder="digite seu nome">
+                      <input type="text" name = "nome" class="form-control form-control-sm" id="name" placeholder="digite seu nome">
                      
                       <label for="sobre" ><small>Sobrenome</small></label>
-                      <input type="text" name = "sobrenome" class="form-control form-control-sm" id="sobrenome" placeholder="digite seu Sobrenome">
+                      <input type="text" name = "sobrenome" class="form-control form-control-sm" id="lastname" placeholder="digite seu Sobrenome">
                      
                       <label for="e-mail" ><small>E-mail</small></label>
-                      <input type="text" name = "email" class="form-control form-control-sm" id="e-mail" placeholder="digite seu e-mail">
+                      <input type="text" name = "email" class="form-control form-control-sm" id="email" placeholder="digite seu e-mail">
                       
                       <label for="sexo" ><small>Sexo</small></label>
                       <select class="form-control form-control-sm" name="sexo" id="sexo">
@@ -146,7 +146,7 @@
                       <input type="text" name="" class="form-control form-control-sm" id="cpf">-->
 
                       <label><small>Nascimento</small></label>
-                      <select name = "dia" class="form-control form-control-sm form2">
+                      <select name = "dia" id="day" class="form-control form-control-sm form2">
                          <option value="01">01</option>
                          <option value="02">02</option>
                          <option value="03">03</option>
@@ -180,7 +180,7 @@
                          <option value="31">31</option>
                       </select>
                      
-                      <select name = "mes" class="form-control form-control-sm form2">
+                      <select name = "mes" id="month" class="form-control form-control-sm form2">
                          <option value="01">01</option>
                          <option value="02">02</option>
                          <option value="03">03</option>
@@ -195,7 +195,7 @@
                          <option value="12">12</option>
                       </select>
 
-                      <select name = "ano" class="form-control form-control-sm form2">
+                      <select name = "ano" id="year" class="form-control form-control-sm form2">
                         <option value="2010">2010</option>
                         <option value="2009">2009</option>
                         <option value="2008">2008</option>
@@ -299,13 +299,13 @@
                       </select>
                      <br>
                       <label for="pass"><small>Senha</small></label>
-                      <input type="password" name="password" id="pass" minlength = '7' class="form-control form-control-sm is-valid" onmouseout='checkPassCompatibilty()'  placeholder="crie uma senha">
+                      <input type="password" name="password" id="password" minlength = '7' class="form-control form-control-sm is-valid" onmouseout='checkPassCompatibilty()'  placeholder="crie uma senha">
 
                          <!--<small class="invalid-feedback">Senha inválido</small> -->
 
 
                       <label for="pass2"><small>Repetir Senha</small></label>
-                      <input type="password" name="password_confirm" id="passConfirmation" minlength = '7' class="form-control form-control-sm is-valid" onmouseout='checkPassCompatibilty()' placeholder="crie uma senha" placeholder="digite sua senha novamente">
+                      <input type="password" name="password_confirm" id="password2" minlength = '7' class="form-control form-control-sm is-valid" onmouseout='checkPassCompatibilty()' placeholder="crie uma senha" placeholder="digite sua senha novamente">
                       
                         <!-- <small class="invalid-feedback">Senha inválido</small> -->
 
