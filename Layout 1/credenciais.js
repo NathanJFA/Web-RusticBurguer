@@ -1,10 +1,10 @@
-<?php
+<?html
 
 session_start();
 
-require '../Entidades/Entidade.php';
-//require 'config_cliente.php';
-require 'servidor.php';
+require '../Entidades/Entidade.html';
+//require 'config_cliente.html';
+require 'servidor.html';
 
 if(isset($_GET['intention'])){
     if($_GET['intention'] == 'register'){
@@ -48,21 +48,21 @@ function register(){
                         $_SESSION['autenticado'] = "true";
                         $_SESSION['user_logado'] = $nome;
                         $_SESSION['chave_user'] = $email;
-                        header('Location: index.php?cadastro=success');
+                        header('Location: index.html?cadastro=success');
                     }else{
-                        header('Location: cadastro.php?erro=erro');
+                        header('Location: cadastro.html?erro=erro');
                     }          
                 }catch(Exception $e){
                     echo('Erro no cadastro: '.$e->getCode().' Mensagem: '.$e->getMessage());
                 }
             }else{
-                header('Location: cadastro.php?cadastro=senhapequena');
+                header('Location: cadastro.html?cadastro=senhapequena');
             }
         }else{
-            header('Location: cadastro.php?cadastro=errosenha');
+            header('Location: cadastro.html?cadastro=errosenha');
         }
     }else{
-        header('Location: cadastro.php?cadastro=valoresnaosetados');
+        header('Location: cadastro.html?cadastro=valoresnaosetados');
     }     
 }
 function registerClient($nome, $sobrenome, $email, $telefone, $sexo, $dia, $mes, $ano, $senha){
@@ -104,7 +104,7 @@ function login(){
                 $_SESSION['autenticado'] = 'true';
                 $_SESSION['user_logado'] = $c["nome"];
                 $_SESSION['chave_user'] = $c['email'];
-                header('Location: index.php');
+                header('Location: index.html');
             }
         }
     }
@@ -112,7 +112,7 @@ function login(){
     #verifica autenticacao
     if(!$cliente_autenticado){
         $_SESSION['autenticado'] = 'false';
-        header('Location: login_cliente.php?login=erro');
+        header('Location: login_cliente.html?login=erro');
     }
     
 }

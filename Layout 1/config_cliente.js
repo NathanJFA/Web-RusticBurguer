@@ -1,22 +1,22 @@
-<?php
+<?html
 
 session_start();
-require 'servidor.php';
+require 'servidor.html';
 
 
 if(isset($_GET['intention'])) {
     if($_GET['intention'] == 'only_register'){
         if(registerAddress() == true){
-            header('Location: central_controle/endereco.php');
+            header('Location: central_controle/endereco.html');
         }else{
-            header('Location: finalizar.php?intention=only_register');
+            header('Location: finalizar.html?intention=only_register');
         }
     }if($_GET['intention'] == 'change_address'){
         $response = changeAddress();
         if($response != 0){
-            header('Location: central_controle/endereco.php');
+            header('Location: central_controle/endereco.html');
         }else{
-            header('Location: finalizar.php?intention=change_address');
+            header('Location: finalizar.html?intention=change_address');
         }
     }
 

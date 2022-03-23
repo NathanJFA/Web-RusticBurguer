@@ -2,7 +2,7 @@
 
 
 function good(){
-    window.location.href='../admin/login/verificacao.php'
+    window.location.href='../admin/login/verificacao.html'
 }
 
   
@@ -20,10 +20,10 @@ function painel(){
   var senha = 'admin123';
   
     if(recebido1 === nome && recebido2 === senha ){
-        window.location.href='login.php';
+        window.location.href='login.html';
     }else{
         alert('Você não é um admin!!');
-        window.location.href = '../Layout 1/login1.php';
+        window.location.href = '../Layout 1/login1.html';
    }
 }
 
@@ -41,7 +41,7 @@ function verificar (){
       var pass = document.getElementById('senha').value
 
     if (user === Name && pass === Senha) {
-        window.location.href = '../../admin/index.php'
+        window.location.href = '../../admin/index.html'
     }
     else{
         alert('Senha ou email incorreto ou usúario não cadastrado!')
@@ -71,7 +71,7 @@ function rede (){
      var  x = setInterval(function(){ ; i--
          if( i === 0){
           //window.location.reload()
-          window.location.href ='../Layout 1/index.php'
+          window.location.href ='../Layout 1/index.html'
           clearInterval(x)
          }
       },2000)

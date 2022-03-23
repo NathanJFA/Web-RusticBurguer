@@ -1,4 +1,4 @@
-<?php
+<?html
 
 $query_primary_admin = "INSERT INTO tb_admins (nickname, email, pass) VALUES ('Burguer Admin','burguer_admin@gmail.com','burguer2021')";
 

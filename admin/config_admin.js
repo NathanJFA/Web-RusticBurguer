@@ -1,13 +1,13 @@
-<?php
+<?html
 session_start();
-require '../Layout 1/servidor.php';
-require_once "../admin/query_init/one_admin.php";
+require '../Layout 1/servidor.html';
+require_once "../admin/query_init/one_admin.html";
 
 
 if(isset($_GET['intention'])){
     if($_GET['intention'] == 'updateInfoAdmin'){
         if(updateInfoAdmin()){
-            header('Location: configuracao.php?status=ok');
+            header('Location: configuracao.html?status=ok');
         }
     }if($_GET['intention'] == 'generationCoupon'){
         couponGenerator($_POST['name'], $_POST['value'], $_POST['date_expiration']);
@@ -41,21 +41,21 @@ function resgister(){
                     if($regist == true){
                         $_SESSION['admin'] = true;
                         $_SESSION['admin'] = $email;
-                        header('Location: index.php?cadastro=success');
+                        header('Location: index.html?cadastro=success');
                     }else{
-                        header('Location: cadastro.php?erro=erro');
+                        header('Location: cadastro.html?erro=erro');
                     }          
                 }catch(Exception $e){
                     echo('Erro no cadastro: '.$e->getCode().' Mensagem: '.$e->getMessage());
                 }
             }else{
-                header('Location: cadastro.php?cadastro=senhapequena');
+                header('Location: cadastro.html?cadastro=senhapequena');
             }
         }else{
-            header('Location: cadastro.php?cadastro=errosenha');
+            header('Location: cadastro.html?cadastro=errosenha');
         }
     }else{
-        header('Location: cadastro.php?cadastro=valoresnaosetados');
+        header('Location: cadastro.html?cadastro=valoresnaosetados');
     }     
 }
     
@@ -73,7 +73,7 @@ function login(){
                 $_SESSION['autenticado'] = 'true';
                 $_SESSION['user_logado'] = $a["nome"];
                 $_SESSION['chave_user'] = $a['email'];
-                header('Location: index.php');
+                header('Location: index.html');
             }
         }
     }
@@ -81,7 +81,7 @@ function login(){
     #verifica autenticacao
     if(!$cliente_autenticado){
         $_SESSION['autenticado'] = 'false';
-        header('Location: login_cliente.php?login=erro');
+        header('Location: login_cliente.html?login=erro');
     }
     
 }

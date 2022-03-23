@@ -1,10 +1,4 @@
-<?php
-  session_start();
-  if(isset($_GET['exit']) && $_GET['exit'] == 'true'){
-    $_SESSION['autenticado'] = "false";
-    $_SESSION['user_logado'] = "";
-  }
-?>
+
 <!DOCTYPE html>
 <html lang='pt-br'>
 <head>
@@ -36,44 +30,39 @@
           <i class="fas fa-bars" id="sidebar_btn"></i> 
          </label>
          <div class="esquerda_area">
-          <a href="../index.php" class="logoShop">
+          <a href="../index.html" class="logoShop">
          <img src="../img/logo2.png" width="171">
           <h3 class="d-none">Hamburger <span>Artesanal</span></h3>
           </a>
          </div>
 
          <div class="carrinho_icon"><!--Carrinho-->
-          <a href="../carrinho.php"><i class="fas fa-shopping-cart text-light"></i> <small class="badeg_carrinho"><span class="car">0</span> itens</small></a>
+          <a href="../carrinho.html"><i class="fas fa-shopping-cart text-light"></i> <small class="badeg_carrinho"><span class="car">0</span> itens</small></a>
          </div><!--fim carinho-->
 
-         <?php 
-             //VERIFICANDO O LOGIN
-             if(!isset($_SESSION['autenticado']) || $_SESSION['autenticado'] != "true"){
-          ?>
+         
 
           <div class="botao_right container">
-             <a href="../login_cliente.php" class="nav-link text-light">Entrar</a> 
+             <a href="../login_cliente.html" class="nav-link text-light">Entrar</a> 
           </div>
           
-          <?php
-             }else{
-          ?>
+          
 
          <div class="botao_right dropdown"><!--inicio btn-right-drop-->
              <!--Menu Dropdown-->
-            <a href="../login_cliente.php" class="nav-link dropdown-toggle text-light" data-toggle="dropdown">Olá, <?php echo($_SESSION['user_logado']) ?></a> 
+            <a href="../login_cliente.html" class="nav-link dropdown-toggle text-light" data-toggle="dropdown">Olá</a> 
             
                   <div class="dropdown-menu">
-                    <a href="../central_controle/index.php" class="dropdown-item">Menu</a>
-                    <a href="../central_controle/pedidos.php" class="dropdown-item">Meus Pedidos</a>
-                    <a href="../central_controle/feedback.php" class="dropdown-item">feedback</a>
-                    <a href="../carrinho.php" class="dropdown-item">Meu carrinho</a>
-                    <a href="../central_controle/info.php" class="dropdown-item">Informações da Conta</a>
-                    <a href="../central_controle/endereco.php" class="dropdown-item">Meus Endereços</a>
-                    <a href="../central_controle/card.php" class="dropdown-item">Cartões e Vales</a>
-                    <a href="../index.php?exit=true" class="dropdown-item">Sair</a>
+                    <a href="../central_controle/index.html" class="dropdown-item">Menu</a>
+                    <a href="../central_controle/pedidos.html" class="dropdown-item">Meus Pedidos</a>
+                    <a href="../central_controle/feedback.html" class="dropdown-item">feedback</a>
+                    <a href="../carrinho.html" class="dropdown-item">Meu carrinho</a>
+                    <a href="../central_controle/info.html" class="dropdown-item">Informações da Conta</a>
+                    <a href="../central_controle/endereco.html" class="dropdown-item">Meus Endereços</a>
+                    <a href="../central_controle/card.html" class="dropdown-item">Cartões e Vales</a>
+                    <a href="../index.html?exit=true" class="dropdown-item">Sair</a>
                   </div>
-          <?php } ?>
+          
       </header>
       <!--Fim Cabeçalho-->
    
@@ -83,7 +72,7 @@
             <div class="nav_bar">
           
            <div class="carrinho_ico2">
-          <a href="../../Layout 1/carrinho.php"><i class="fas fa-shopping-cart text-light"></i> <small class="badeg_carrinho"><span class="car">0</span> itens</small></a>
+          <a href="../../Layout 1/carrinho.html"><i class="fas fa-shopping-cart text-light"></i> <small class="badeg_carrinho"><span class="car">0</span> itens</small></a>
            </div>
 
            <label for="check2">

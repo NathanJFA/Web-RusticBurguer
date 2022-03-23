@@ -44,13 +44,13 @@
             </div>
             <div class="mobile_nav_items" style="overflow-y: hidden;">
          
-         <a href="index.php"><i class="fas fa-home"></i><span>Home</span></a>
-         <a href="produtos.php"><i class="fas fa-boxes"></i></i><span>Produtos</span></a>
-         <a href="pedidos.php"> <i class="fas fa-shopping-basket"></i><span>pedidos</span></a>
-         <a href="admin.php"><i class="fas fa-users-cog"></i></i><span>Admins</span></a>
-         <a href="cupom.php"><i class="fas fa-receipt"></i><span>Cupom</span></a>
-         <a href="configuracao.php" class="con"><i class="fas fa-cogs"></i><span>Configuração</span></a>
-         <a href="login/login.php"><i class="fas fa-sign-out-alt"></i><span>Deslogar</span></a>
+         <a href="index.html"><i class="fas fa-home"></i><span>Home</span></a>
+         <a href="produtos.html"><i class="fas fa-boxes"></i></i><span>Produtos</span></a>
+         <a href="pedidos.html"> <i class="fas fa-shopping-basket"></i><span>pedidos</span></a>
+         <a href="admin.html"><i class="fas fa-users-cog"></i></i><span>Admins</span></a>
+         <a href="cupom.html"><i class="fas fa-receipt"></i><span>Cupom</span></a>
+         <a href="configuracao.html" class="con"><i class="fas fa-cogs"></i><span>Configuração</span></a>
+         <a href="login/login.html"><i class="fas fa-sign-out-alt"></i><span>Deslogar</span></a>
             
             </div>
           </div>
@@ -60,15 +60,15 @@
       <div class="sidebar">
          <div class="profile_img">
           <i class="fas fa-user-circle perfil_img" style="font-size: 100px;"></i>
-          <h4 style="font-family: adf"><?php echo(displayNickname()) ?></h4>
+          <h4 style="font-family: adf">user</h4>
          </div>
-         <a href="index.php"><i class="fas fa-home"></i><span>Home</span></a>
-         <a href="produtos.php"><i class="fas fa-boxes"></i></i><span>Produtos</span></a>
-         <a href="pedidos.php"> <i class="fas fa-shopping-basket"></i><span>pedidos</span></a>
-         <a href="admin.php"><i class="fas fa-users-cog"></i></i><span>Admins</span></a>
-         <a href="cupom.php"><i class="fas fa-receipt"></i><span>Cupom</span></a>
-         <a href="configuracao.php" class="con"><i class="fas fa-cogs"></i><span>Configuração</span></a>
-         <a href="login/login.php"><i class="fas fa-sign-out-alt"></i><span>Deslogar</span></a>
+         <a href="index.html"><i class="fas fa-home"></i><span>Home</span></a>
+         <a href="produtos.html"><i class="fas fa-boxes"></i></i><span>Produtos</span></a>
+         <a href="pedidos.html"> <i class="fas fa-shopping-basket"></i><span>pedidos</span></a>
+         <a href="admin.html"><i class="fas fa-users-cog"></i></i><span>Admins</span></a>
+         <a href="cupom.html"><i class="fas fa-receipt"></i><span>Cupom</span></a>
+         <a href="configuracao.html" class="con"><i class="fas fa-cogs"></i><span>Configuração</span></a>
+         <a href="login/login.html"><i class="fas fa-sign-out-alt"></i><span>Deslogar</span></a>
       </div>
 
       <div class="content"><!--inicio content-->
@@ -90,7 +90,7 @@
               
               <div class="mt-5 fundo" style="overflow: hidden;">
 
-              <form action='config_admin.php?intention=updateInfoAdmin' method='POST'>
+              <form action='config_admin.html?intention=updateInfoAdmin' method='POST'>
 
                 <div class="fundo"><!--inicio email-->
                 <label for="email"><h6>Email para receber informação</h6></label>
@@ -109,7 +109,7 @@
 
                 <div class="mt-2 mb-2 fundo"><!--nome customizado-->
                 <label for="nick"><h6>Nome Customizado</h6></label>
-                <input type="text" name="nickname" placeholder= <?php if(isset($_SESSION['nickname'])){echo($_SESSION['nickname']);}else{echo('admin');} ?> class="form-control" id="nick">
+                <input type="text" name="nickname" placeholder= "teste" class="form-control" id="nick">
                 </div><!--fim nome customizado-->
 
 

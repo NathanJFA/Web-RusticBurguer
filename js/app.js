@@ -21,7 +21,7 @@ function cadastraCliente(){
             let newCliente = new CLiente(nome, sobrenome, email, sexo, dia, mes, ano, senha);
             bd.gravar(newCliente)
             alert("deu certo");
-            window.location.replace("../login/Layout 1/login1.php")
+            window.location.replace("../login/Layout 1/login1.html")
         }
     }else{
         alert("error")

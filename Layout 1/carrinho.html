@@ -1,6 +1,4 @@
- <?php
-session_start();
-?>
+
 
 <!DOCTYPE html>
 <html lang='pt-br'>
@@ -33,7 +31,7 @@ session_start();
           <i class="fas fa-bars" id="sidebar_btn"></i> 
          </label>
          <div class="esquerda_area">
-          <a href="index.php" class="logoShop">
+          <a href="index.html" class="logoShop">
            <img src="img/logo2.png" width="171px">
           <h3 class="d-none">Hamburger <span>Artesanal</span></h3>
           </a>
@@ -43,15 +41,9 @@ session_start();
           <a href="#"><i class="fas fa-shopping-cart text-light"></i> <small class="badeg_carrinho"><span class="car">0</span> itens</small></a>
          </div><!--fim carinho-->
 
-         <?php
-            if(!isset($_SESSION['autenticado']) || $_SESSION['autenticado'] != "true"){
-         ?>
             <div class="botao_right">
-               <a href="login_cliente.php" class="nav-link text-light"> Entrar</a>
+               <a href="login_cliente.html" class="nav-link text-light"> Entrar</a>
             </div>
-         <?php
-            }
-         ?>
 
          
       </header>
@@ -154,17 +146,11 @@ session_start();
                   </tfoot>
                   </table> 
                   </div>
-                  <?php
-                  if(isset($_SESSION['autenticado']) && $_SESSION['autenticado'] == "true"){
-                  ?>
-                  <a href="finalizar.php" class="float-right btn btn-block btn-dark">Finalizar</a>
-                  <?php
-                  }else{
-                  ?>
-                  <a href="login_cliente.php" class="float-right btn btn-block btn-dark">Finalizar</a>
-                  <?php
-                  }
-                  ?>
+                  
+                  <a href="finalizar.html" class="float-right btn btn-block btn-dark">Finalizar</a>
+                  
+                  <a href="login_cliente.html" class="float-right btn btn-block btn-dark">Finalizar</a>
+                  
 
 
                   <div class="clearfix"></div>

@@ -1,12 +1,3 @@
-<?php
-
-
-if(isset($_SESSION['user_logado'])){
-  header("location = index.php");
-
-} 
-
-?>
 
 <!DOCTYPE html>
 <html lang='pt-br'>
@@ -41,14 +32,14 @@ if(isset($_SESSION['user_logado'])){
           <i class="fas fa-bars" id="sidebar_btn"></i> 
          </label>
          <div class="esquerda_area">
-          <a href="index.php" class=" logoShop">
+          <a href="index.html" class=" logoShop">
           <img src="img/logo2.png" width="171">
           <h3 class="d-none">Hamburger <span>Artesanal</span></h3>
            </a>
          </div>
 
          <div class="carrinho_icon d-none"><!--Carrinho-->
-          <a href="carrinho.php"><i class="fas fa-shopping-cart text-light"></i> <small class="badeg_carrinho"><span class="car">0</span> itens</small></a>
+          <a href="carrinho.html"><i class="fas fa-shopping-cart text-light"></i> <small class="badeg_carrinho"><span class="car">0</span> itens</small></a>
          </div><!--fim carinho-->
 
          <div class="botao_right d-none">
@@ -64,7 +55,7 @@ if(isset($_SESSION['user_logado'])){
             <div class="nav_bar">
           
            <div class="carrinho_ico2 d-none">
-          <a href="carrinho.php"><i class="fas fa-shopping-cart text-light"></i> <small class="badeg_carrinho"><span class="car">0</span> itens</small></a>
+          <a href="carrinho.html"><i class="fas fa-shopping-cart text-light"></i> <small class="badeg_carrinho"><span class="car">0</span> itens</small></a>
            </div>
 
            <label for="check2">

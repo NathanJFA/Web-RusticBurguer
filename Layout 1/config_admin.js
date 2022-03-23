@@ -1,4 +1,4 @@
-<?php
+<?html
 
 
 function cadastraHamburger($imagem, $nome, $valor, $descricao, $opcoes){

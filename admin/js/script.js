@@ -9,7 +9,7 @@ function addSize(){
 function addCoupon(){
     $.ajax({
         type: "POST",
-        url: "load_post.php",
+        url: "load_post.html",
         data: {categoria:query},
         success: function(dados){
             alert(dados);

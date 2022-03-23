@@ -1,12 +1,4 @@
-<?php
 
-session_start();
-
-if(isset($_SESSION['autenticado']) && $_SESSION['autenticado'] == 'true'){
-  header('Location: index.php?status=cliente_logado');
-}
-
-?>
 
 <!DOCTYPE html>
 <html lang='pt-br'>
@@ -38,25 +30,19 @@ if(isset($_SESSION['autenticado']) && $_SESSION['autenticado'] == 'true'){
           <i class="fas fa-bars" id="sidebar_btn"></i> 
          </label>
          <div class="esquerda_area">
-          <a href="index.php" class="logoShop">
+          <a href="index.html" class="logoShop">
           <img src="img/logo2.png" width="171">
           <h3 class="d-none">Hamburger <span>Artesanal</span></h3>
            </a>
          </div>
 
          <div class="carrinho_icon"><!--Carrinho-->
-          <a href="carrinho.php"><i class="fas fa-shopping-cart text-light"></i> <small class="badeg_carrinho"><span class="car">0</span> itens</small></a>
+          <a href="carrinho.html"><i class="fas fa-shopping-cart text-light"></i> <small class="badeg_carrinho"><span class="car">0</span> itens</small></a>
          </div><!--fim carinho-->
 
-         <?php
-            if(!isset($_SESSION['autenticado']) || $_SESSION['autenticado'] != "true"){
-         ?>
             <div class="botao_right d-none">
-               <a href="../Layout 1/login_cliente.php" class="nav-link text-light"> Entrar</a>
+               <a href="../Layout 1/login_cliente.html" class="nav-link text-light"> Entrar</a>
             </div>
-         <?php
-            }
-         ?>
           
       </header>
       <!--Fim Cabeçalho-->
@@ -67,7 +53,7 @@ if(isset($_SESSION['autenticado']) && $_SESSION['autenticado'] == 'true'){
             <div class="nav_bar">
           
            <div class="carrinho_ico2">
-          <a href="carrinho.php"><i class="fas fa-shopping-cart text-light"></i> <small class="badeg_carrinho"><span class="car">0</span> itens</small></a>
+          <a href="carrinho.html"><i class="fas fa-shopping-cart text-light"></i> <small class="badeg_carrinho"><span class="car">0</span> itens</small></a>
            </div>
 
            <label for="check2">
@@ -116,7 +102,7 @@ if(isset($_SESSION['autenticado']) && $_SESSION['autenticado'] == 'true'){
                  <div id="background"><!--div fundo-->
                  <div class="row">
                   <div class="col-md-6 col-sm-6">
-                   <form action="credenciais.php?intention=login" method="POST">
+                   <form action="credenciais.html?intention=login" method="POST">
                     <strong>Já sou cliente</strong><br>
                     <label for="loginCliente">Login:</label>
                     <input type="text" name="email" id="loginCliente" class="form-control is-invalid" placeholder="Digite seu e-mail" required="required">
@@ -131,13 +117,13 @@ if(isset($_SESSION['autenticado']) && $_SESSION['autenticado'] == 'true'){
                     
                       <!--recuperação de senha/email-->
                      <div class="text-right mb-1">
-                      <small><a href="senha.php">Esqueçeu sua senha?</a></small>
-                      <small><a href="email.php">Esqueçeu seu email?</a></small>
+                      <small><a href="senha.html">Esqueçeu sua senha?</a></small>
+                      <small><a href="email.html">Esqueçeu seu email?</a></small>
                      </div>
                        <!--fim recuperação de senha/email-->
 
                      <button class="btn btn-dark2 btn-block" type="submit">Entrar</button>
-                     <a href="cadastro.php" class="btn btn-outline-danger btn-block"><small>QUERO ME CADASTRAR</small></a>
+                     <a href="cadastro.html" class="btn btn-outline-danger btn-block"><small>QUERO ME CADASTRAR</small></a>
                      </form>
 
                      <button class="btn btn-danger btn-sm mt-2" onclick="good()"><i class="fas fa-user-lock"></i> <small>ADMINISTRADOR</small></button>
