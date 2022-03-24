@@ -23,8 +23,16 @@ function registerClient(){
                 password: this.password,
                 date: this.date
             })
-        const headers = {'Content-Type':'application/json'}
-        fetch('10.52.5.181:3005/api/clients/', { method: 'POST', body: corpo, headers: cabecalhos}).then(console.log) 
+            const headers = {'Content-Type':'application/json'}
+            fetch('10.52.5.181:3005/api/clients/', {
+                method: 'POST',
+                body: body,
+                headers: headers
+            }).then(function(response){
+                //RESOLVER A RESPOSTA AQUI
+            }).catch(function(err){
+                //RESP=OLVER OS ERROS AQUI
+            })
         }
         catch(erro){
             console.log({message: erro.message})
