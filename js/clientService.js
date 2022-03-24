@@ -1,6 +1,7 @@
 
 
 function registerClient(){
+    console.log
     const name = Document.getElementById('name').value
     const lastname = Document.getElementById('lastname').value
     const email = Document.getElementById('lastname').value
@@ -29,9 +30,9 @@ function registerClient(){
                 body: body,
                 headers: headers
             }).then(function(response){
-                //RESOLVER A RESPOSTA AQUI
+                console.log(response.body)
             }).catch(function(err){
-                //RESP=OLVER OS ERROS AQUI
+                console.log(err.message)
             })
         }
         catch(erro){
