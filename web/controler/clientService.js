@@ -24,8 +24,8 @@ function registerClient(){
     var date = day + '/' + month + '/' + year
     */
     
-    
-    var name = document.getElementById('name').value
+    /*
+    document.getElementById('name').value
     var lastname = document.getElementById('lastname').value
     var email = document.getElementById('lastname').value
     var s = document.getElementById('sexo').value
@@ -37,6 +37,20 @@ function registerClient(){
     var day = document.getElementById('day').value
     var month = document.getElementById('month').value
     var year = document.getElementById('year').value
+    var date = day + '/' + month + '/' + year
+    */
+
+    var name = $_POST['name']
+    var lastname = $_POST['lastname']
+    var email = $_POST['email']
+    var s = $_POST['sexo']
+    var sexo = s.toUpperCase()
+    var telephone = '0000000'
+    var password = $_POST['password']
+    var passwordVerification = $_POST['passwordVerification']
+    var day = $_POST['day']
+    var month = $_POST['month']
+    var year = $_POST['year']
     var date = day + '/' + month + '/' + year
 
     if(validate(password, passwordVerification)){
