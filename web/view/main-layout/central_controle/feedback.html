@@ -1,9 +1,10 @@
 
+
 <!DOCTYPE html>
 <html lang='pt-br'>
 <head>
   <meta charset="utf-8">
-  <title>Meus Endereços</title>
+  <title>feedback</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -16,9 +17,10 @@
    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js">
    <!--normalize-->
    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-   <link rel="icon" href="icon/endereco.png">
+   <link rel="icon" href="icon/feed.png">
+
 </head>
-<body id="End">
+<body id="Tro">
      
    <!--Cabeçalho-->
         <!--bottão oculta menu-->
@@ -35,19 +37,19 @@
          </div>
 
          <div class="carrinho_icon"><!--Carrinho-->
-          <a href="Layout 1/carrinho.html"><i class="fas fa-shopping-cart text-light"></i> <small class="badeg_carrinho"><span class="car">0</span> itens</small></a>
+          <a href="main-layout/carrinho.html"><i class="fas fa-shopping-cart text-light"></i> <small class="badeg_carrinho"><span class="car">0</span> itens</small></a>
          </div><!--fim carinho-->
 
          <div class="botao_right d-none">
-          <a href="Layout 1/login_cliente.html" class="nav-link text-light"> Entrar</a>
+          <a href="main-layout/login_cliente.html" class="nav-link text-light"> Entrar</a>
          </div>
-
-          <div class="botao_right dropdown"><!--inicio btn-right-drop-->
+          
+           <div class="botao_right dropdown"><!--inicio btn-right-drop-->
              <!--Menu Dropdown-->
 
-            <a href="#" class="nav-link dropdown-toggle text-light" data-toggle="dropdown">Olá,User!</a> 
+            <a href="#" class="nav-link dropdown-toggle text-light" data-toggle="dropdown">Olá, User!</a> 
                   <div class="dropdown-menu">
-                      <a href="menu.html" class="dropdown-item">Ínicio</a>
+                      <a href="index.html" class="dropdown-item">Menu</a>
                       <a href="pedidos.html" class="dropdown-item">Meus Pedidos</a>
                       <a href="feedback.html" class="dropdown-item">feedback</a>
                       <a href="../carrinho.html" class="dropdown-item">Meu carrinho</a>
@@ -68,7 +70,7 @@
             <div class="nav_bar">
           
            <div class="carrinho_ico2">
-          <a href="Layout 1/carrinho.html"><i class="fas fa-shopping-cart text-light"></i> <small class="badeg_carrinho"><span class="car">0</span> itens</small></a>
+          <a href="main-layout/carrinho.html"><i class="fas fa-shopping-cart text-light"></i> <small class="badeg_carrinho"><span class="car">0</span> itens</small></a>
            </div>
 
            <label for="check2">
@@ -97,7 +99,7 @@
          <a href="#"><span>NaN</span></a>
          <a href="#"><span>NaN</span></a>
          <a href="#"><span>NaN</span></a>
-        
+         <a href="#"><span>NaN</span></a>
       </div>
 
         <!--Animação-->
@@ -106,8 +108,7 @@
       <div class=""><!--inicio content-->
                
               <div class="container-fluid lupa">
-              
-
+                
                 <!--*********************** D E S A T I V A D O************************-->
                <div class="mt-3 lupa d-none"><!--pesquisar desativado-->
                <input type="search" class="pesquisa " placeholder="O que você procurar ?">
@@ -124,12 +125,12 @@
                         <div class="grupo"><!--inicio grupo-->
                         <h6 class="">Olá, <span class="text">User</span>!</h6>
                         <ul>
-                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="index.html">Menu</a></li>
                         <li><a href="pedidos.html">Meus Pedidos</a></li>
-                        <li><a href="feedback.html">feedback</a></li>
+                        <li><a href="#" class="tro">feedback</a></li>
                         <li><a href="../carrinho.html">Meu carrinho</a></li>
                         <li><a href="info.html">Informações da Conta</a></li>
-                        <li><a href="#" class="enD">Meus Endereços</a></li>
+                        <li><a href="endereco.html">Meus Endereços</a></li>
                         <li><a href="card.html">Cartões</a></li>
                         <li><a href="../index.html?exit=true">Sair</a></li>
                         </ul>
@@ -141,60 +142,14 @@
 
                 <div class="**-primary col-md-9"><!--inicio lado right-->
                 <div class="row">
-                  <div class="card col-md-12">
-                    <div class="end">
-                   
-                      <h3>Endereço Principal</h3>
-                      <!--se não tive um endereço o small tem que está ativado-->
-                      <small>Você ainda não possui nenhum produto favorito, <a href="../finalizar.html?intention=only_register" class="text-danger">Adicionar endereço</a></small>
-                     
-                      
-                         <table class="table table-light table-bordered">
-                          <thead class="">
-                            <tr>
-                              <th>Nome</th>
-                              <td>?</td>
-                            </tr>
-                          </thead>
-                        <tbody>
-                          <tr>
-                            <th>Telefone</td>
-                            <td>?</td>
-                          </tr>
-                          <tr>
-                            <th>Email</td>
-                            <td>?</td>
-                          </tr>
-                          <!--
-                          <tr>
-                            <th>CEP</td>
-                            <td></td>
-                          </tr> 
-                          -->
-                          <tr>
-                            <th>Número</td>
-                            <td>?</td>
-                          </tr>
-                          <!--
-                          <tr>
-                            <th>Complemento</td>
-                            <td></td>
-                          </tr>
-                          -->
-                          <tr>
-                            <th>Bairro</td>
-                            <td>?</td>
-                          </tr>
-                          <tr>
-                            <th>Ponto de Rêferencia</td>
-                            <td>?</td>
-                          </tr>
-                        </tbody>
-                        </table>
-                        <small>Se deseja alterar o endereço, <a href="../finalizar.html?intention=change_address" class="text-danger">Clique aqui</a></small>
-                      
-                    
+                  <div class="troca col-md-12">
+                    <div class="trocar">
+                    <h3>feedback</h3>
+                      <small>* Escreva oque você achou dos nossos serviços.</small>
+
+                      <textarea class="form-control"></textarea>
                     </div>
+                
                  </div>
                 </div><!--Fim lado right-->
               </div><!--Fim row-->

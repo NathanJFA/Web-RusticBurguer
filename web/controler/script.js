@@ -23,7 +23,7 @@ function painel(){
         window.location.href='login.html';
     }else{
         alert('Você não é um admin!!');
-        window.location.href = '../Layout 1/login1.html';
+        window.location.href = '../main-layout/login1.html';
    }
 }
 
@@ -55,8 +55,7 @@ function verificar (){
 
 
 function gif(){
-    console.log("ta recebendo");
-    window.location.href = 'web/Aviso/coffe.html'
+    window.location.href = './web/view/Aviso/coffe.html'
      
     }
 
@@ -69,10 +68,9 @@ function rede (){
      
 
      var  x = setInterval(function(){ ; i--
-         if( i === 0){
-          //window.location.reload()
-          window.location.href ='../Layout 1/index.html'
-          clearInterval(x)
+        if( i === 0){
+            window.location.href ='../main-layout/index.html'
+            clearInterval(x)
          }
       },2000)
 

@@ -1,6 +1,6 @@
 <?html
 session_start();
-require '../Layout 1/servidor.html';
+require '../main-layout/servidor.html';
 require_once "../admin/query_init/one_admin.html";
 
 

@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
 <html lang='pt-br'>
 <head>
   <meta charset="utf-8">
-  <title>Início</title>
+  <title>Cartões</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -16,10 +15,9 @@
    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js">
    <!--normalize-->
    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-   <link rel='icon' href="icon/home.png">
-
+   <link rel='icon' href="icon/card.png">
 </head>
-<body id="Iniciof">
+<body id="Card">
      
    <!--Cabeçalho-->
         <!--bottão oculta menu-->
@@ -36,19 +34,18 @@
          </div>
 
          <div class="carrinho_icon"><!--Carrinho-->
-          <a href="Layout 1/carrinho.html"><i class="fas fa-shopping-cart text-light"></i> <small class="badeg_carrinho"><span class="car">0</span> itens</small></a>
+          <a href="main-layout/carrinho.html"><i class="fas fa-shopping-cart text-light"></i> <small class="badeg_carrinho"><span class="car">0</span> itens</small></a>
          </div><!--fim carinho-->
 
          <div class="botao_right d-none">
-          <a href="Layout 1/login_cliente.html" class="nav-link text-light"> Entrar</a>     
+          <a href="main-layout/login_cliente.html" class="nav-link text-light"> Entrar</a>
          </div>
 
-         <div class="botao_right dropdown"><!--inicio btn-right-drop-->
+          <div class="botao_right dropdown"><!--inicio btn-right-drop-->
              <!--Menu Dropdown-->
 
-    <a href="#" class="nav-link dropdown-toggle text-light" data-toggle="dropdown">Olá, User</a> 
+            <a href="#" class="nav-link dropdown-toggle text-light" data-toggle="dropdown">Olá, User!</a> 
                   <div class="dropdown-menu">
-                      
                       <a href="index.html" class="dropdown-item">Menu</a>
                       <a href="pedidos.html" class="dropdown-item">Meus Pedidos</a>
                       <a href="feedback.html" class="dropdown-item">feedback</a>
@@ -56,7 +53,7 @@
                       <a href="info.html" class="dropdown-item">Informações da Conta</a>
                       <a href="endereco.html" class="dropdown-item">Meus Endereços</a>
                       <a href="card.html" class="dropdown-item">Cartões</a>
-                      <a href='../index.html' class="dropdown-item">Sair</a>
+                      <a href="../index.html?exit=true" class="dropdown-item">Sair</a>
                   </div>
 
          </div><!--Fimm btn-right-drop-->
@@ -70,7 +67,7 @@
             <div class="nav_bar">
           
            <div class="carrinho_ico2">
-          <a href="Layout 1/carrinho.html"><i class="fas fa-shopping-cart text-light"></i> <small class="badeg_carrinho"><span class="car">0</span> itens</small></a>
+          <a href="main-layout/carrinho.html"><i class="fas fa-shopping-cart text-light"></i> <small class="badeg_carrinho"><span class="car">0</span> itens</small></a>
            </div>
 
            <label for="check2">
@@ -83,7 +80,7 @@
          <a href="#"><span>NaN</span></a>
          <a href="#"><span>NaN</span></a>
          <a href="#"><span>NaN</span></a>
-         <a href="#"><span>NaN</span></a>
+         
             
             </div>
           </div>
@@ -98,8 +95,7 @@
          <a href="#"><span>NaN</span></a>
          <a href="#"><span>NaN</span></a>
          <a href="#"><span>NaN</span></a>
-         <a href="#"><span>NaN</span></a>
-
+        
       </div>
 
         <!--Animação-->
@@ -109,16 +105,18 @@
                
               <div class="container-fluid lupa">
                 
-                <!--*********************** D E S A T I V A D O************************-->
+
+              <!--*********************** D E S A T I V A D O************************-->
                <div class="mt-3 lupa d-none"><!--pesquisar desativado-->
                <input type="search" class="pesquisa " placeholder="O que você procurar ?">
                <button class="btn btn-dark lup"><i class="fas fa-search"></i></button>
                </div><!--fim pesquisar-->
              <!--************ F I N A L . D E S A T I V A D O************************-->
+        
 
          </div>
             
-            <div class="container" id="inicio"><!--Inicio container-->
+         <div class="container" id="inicio"><!--Inicio container-->
               <div class="row"><!--Inicio row-->
                 <div class="**-danger col-md-3"> <!--inicio lado left-->
                      <div class="row"><!--inicio row interna-->
@@ -126,14 +124,14 @@
                         <div class="grupo"><!--inicio grupo-->
                         <h6 class="">Olá, <span class="text">User</span>!</h6>
                         <ul>
-                        <li><a href="#" class="iniciof">Menu</a></li>
+                        <li><a href="index.html">Menu</a></li>
                         <li><a href="pedidos.html">Meus Pedidos</a></li>
                         <li><a href="feedback.html">feedback</a></li>
                         <li><a href="../carrinho.html">Meu carrinho</a></li>
                         <li><a href="info.html">Informações da Conta</a></li>
                         <li><a href="endereco.html">Meus Endereços</a></li>
-                        <li><a href="card.html">Cartões</a></li>
-                        <li><a href="../index.html">Sair</a></li>
+                        <li><a href="#" class="cArd">Cartões</a></li>
+                        <li><a href="../index.html?exit=true">Sair</a></li>
                         </ul>
                         </div><!--fim grupo-->
                         </div><!--fim col-->
@@ -143,67 +141,43 @@
 
                 <div class="**-primary col-md-9"><!--inicio lado right-->
                 <div class="row">
-                 <div class=" blocos"><!--inicio col0-->
-                 <div class="">
-                 <a href="pedidos.html">
-                 <center><i class="fas fa-shopping-bag"></i></center>
-                    <h5>Meus pedidos</h5>
-                 </a>
+                  <div class="card col-md-12">
+                    <div class="credito">
+                    <h3>Cartões de crédito</h3>
+                      <small class="d-none">você não possui cartões de créditos cadastrados para 
+                      compra.</small>
+
+                      <table class="table table-responsive">
+                         <thead>
+                           <th>Cartão</th>
+                           <th>validade</th>
+                           <th>Código de segurança</th>
+                           <th>Nome no cartão</th>
+                           <th>CPF</th>
+                         </thead>
+                         <tbody>
+                           <td>5320 xxx xxxx xx31</td>
+                           <td>08/22</td>
+                           <td>xxx</td>
+                           <td>code coffe + code_café</td>
+                           <td>476.xxx.xxxx-85</td>
+                         </tbody>
+                      </table>
+
+
+                    </div>
+                     <div class="debito">
+                    <h3>Cartões de débito</h3>
+                      <small> você não possui cartões de débito cadastrados para compra.</small>
+                     </div>
                  </div>
-                 </div><!--fim col0-->
-
-               <div class=" blocos"><!--inicio col1-->
-               <div class="">
-               <a href="feedback.html">
-                <center><i class="fas fa-comment"></i></center>
-                    <h5>feedback</h5>
-               </a>
-               </div>
-               </div><!--fim col1-->
-
-               <div class=" blocos"><!--inicio col2-->
-               <div class="">
-                <a href="info.html">
-                 <center><i class="fas fa-user-circle"></i></center>
-                    <h5>Informações da Conta</h5>
-                </a>
-               </div>
-               </div><!--fim col2-->
-
-               <div class=" blocos"><!--inicio col3-->
-                 <div class="">
-                  <a href="../carrinho.html">
-                  <center><i class="fas fa-shopping-cart"></i></center>
-                    <h5>Meu Carrinho</h5>
-                  </a>
-                 </div>
-                 </div><!--fim col3-->
-
-               <div class=" blocos"><!--inicio col4-->
-               <div class="">
-                <a href="endereco.html">
-                    <center><i class="fas fa-map-marked-alt"></i></center>
-                    <h5>Meus Endereços</h5>
-                </a>
-               </div>
-               </div><!--fim col4-->
-
-               <div class=" blocos"><!--inicio col5-->
-               <div class="">
-                <a href="card.html">
-                  <center><i class="fas fa-credit-card"></i></center>
-                    <h5>Cartões</h5>
-                </a>
-               </div>
-               </div><!--fim col5-->
-
-                </div>
                 </div><!--Fim lado right-->
               </div><!--Fim row-->
             </div><!--fim container-->
-          
 
-        <footer class="rodape4">
+       
+      </div><!--fim content-->
+        <footer class="rodape">
           <div class="container"><!--container footer-->
           <div class="row"><!--row footer-->
             <div class="col-md-4">
@@ -230,9 +204,12 @@
           &copy; Code + Café todos os direitos reservados.
       </div><!--copy fim-->
       </footer>
-       
-      </div><!--fim content-->
-        
+               
+
+
+      
+  
+
 
        
     <!-- Optional JavaScript -->
