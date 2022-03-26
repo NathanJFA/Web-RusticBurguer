@@ -2,7 +2,7 @@
 
 
 function good(){
-    window.location.href='../admin/login/verificacao.html'
+    window.location.href='../main-layout-main-layout-admin/login/verificacao.html'
 }
 
   
@@ -23,7 +23,7 @@ function painel(){
         window.location.href='login.html';
     }else{
         alert('Você não é um admin!!');
-        window.location.href = '../main-layout/login1.html';
+        window.location.href = '../main-layout-client/login1.html';
    }
 }
 
@@ -41,7 +41,7 @@ function verificar (){
       var pass = document.getElementById('senha').value
 
     if (user === Name && pass === Senha) {
-        window.location.href = '../../admin/index.html'
+        window.location.href = '../../main-layout-admin/index.html'
     }
     else{
         alert('Senha ou email incorreto ou usúario não cadastrado!')
@@ -55,7 +55,7 @@ function verificar (){
 
 
 function gif(){
-    window.location.href = './web/view/Aviso/coffe.html'
+    window.location.href = './web/view/aviso/coffe.html'
      
     }
 
@@ -69,7 +69,7 @@ function rede (){
 
      var  x = setInterval(function(){ ; i--
         if( i === 0){
-            window.location.href ='../main-layout/index.html'
+            window.location.href ='../main-layout-client/index.html'
             clearInterval(x)
          }
       },2000)
