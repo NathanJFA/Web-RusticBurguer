@@ -23,7 +23,12 @@ app.get('/', (req, res) => {
     res.sendFile('index.html')
 })
 app.get('/load', (req, res) => {
-    res.sendFile('coffe.html')
+    res.sendFile(__dirname + '/views/aviso/coffe.html')
 })
+app.get('/main', (req, res) => {
+    res.sendFile(__dirname + '/views/layout-client/index.html')
+})
+app.get('/menu', (res, req) => {
 
+})
 

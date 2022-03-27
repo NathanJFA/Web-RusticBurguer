@@ -64,7 +64,7 @@ function rede(){
 
      var  x = setInterval(function(){ ; i--
         if( i === 0){
-            window.location.href ='layout-client/index.html'
+            window.location.href ='/main'
             clearInterval(x)
          }
       },2000)
