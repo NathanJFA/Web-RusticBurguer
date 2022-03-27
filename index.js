@@ -4,7 +4,10 @@ const app = express()
 const bodyParser = require('body-parser');
 const Sequelize = require('sequelize')
 
-
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(express.static(__dirname + '/views'));
+app.use(express.static(__dirname + '/style'))
 //app.use(bodyParser) -> dando erro aqui
 
 
@@ -21,12 +24,11 @@ const sequelize = new Sequelize('test','root','root',{
     dialect:'mysql'
 })
 */
-app.get('/', (request, response) => {
-    console.log("teste")
-    response.send("testando rota")
+app.get('/', (req, res) => {
+    res.sendFile('index.js')
 })
 
-app.get('/cadastrarCliente', (resquest, response) => {
-    response.render('register-client')
+app.get('/cadastrarCliente', (req, res) => {
+    res.sendFile('/web/view/index.html')
 })
 
