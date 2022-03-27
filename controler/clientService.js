@@ -119,7 +119,7 @@ function login(){
         }).then((data) => {
             let client = new Client(data);
             document.getElementById.value = data.name
-            window.location.href='../main-layout-client/index.html'
+            window.location.href='../layout-client/index.html'
         }).catch(function(err){
             console.log(err.message)
         })

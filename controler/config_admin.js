@@ -1,7 +1,7 @@
 <?html
 session_start();
-require '../main-layout-client/servidor.html';
-require_once "../main-layout-admin/query_init/one_admin.html";
+require '../layout-client/servidor.html';
+require_once "../layout-admin/query_init/one_admin.html";
 
 
 if(isset($_GET['intention'])){

@@ -31,6 +31,6 @@ const body = JSON.stringify({
     date: date
 })
 console.log(body)
-window.location.href = '../view/main-layout-client/'
+window.location.href = '../view/layout-client/'
 
 

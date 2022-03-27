@@ -1,6 +1,6 @@
 <?html
 $session_start();
-require '../../main-layout-client/servidor.html';
+require '../../layout-client/servidor.html';
 
 if(isset($_GET['intention']) && $_GET['intention'] = 'login'){
     login();
