@@ -5,7 +5,7 @@ function validate(password, passwordValidation){
     }
     return false
 }
-
+/*
 registerClient()
 
 function registerClient(){
@@ -38,7 +38,7 @@ function registerClient(){
     var month = document.getElementById('month').value
     var year = document.getElementById('year').value
     var date = day + '/' + month + '/' + year
-    */
+    
 
     var name = $_POST['name']
     var lastname = $_POST['lastname']
@@ -53,6 +53,17 @@ function registerClient(){
     var year = $_POST['year']
     var date = day + '/' + month + '/' + year
 
+    const body = JSON.stringify({
+        name: name,
+        lastname: lastname,
+        email: email,
+        sexo: sexo,
+        telephone: telephone,
+        password: password,
+        date: date
+    })
+    console.log(body)
+    
     if(validate(password, passwordVerification)){
         try{
             const body = JSON.stringify({
@@ -83,6 +94,7 @@ function registerClient(){
         console.log("erro ao validar")
     }
 }
+*/
 function validate(password, passwordValidation){
     if(password === passwordValidation){
         return true
