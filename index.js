@@ -25,10 +25,20 @@ app.get('/', (req, res) => {
 app.get('/load', (req, res) => {
     res.sendFile(__dirname + '/views/aviso/coffe.html')
 })
-app.get('/main', (req, res) => {
+app.get('/cardapio', (req, res) => {
     res.sendFile(__dirname + '/views/layout-client/index.html')
 })
-app.get('/menu', (res, req) => {
+//---------------FAZEM PARTE DE UM MESMO LAYOUT  (CENTRAL)-----
+const routerCentral = require('./controler/central-client/index.js')
+app.use('/central', routerCentral)
+// -----------------------------------------------------------
 
+app.get('/carrinho', (req, res) => {
+    res.sendFile(__dirname + '/views/layout-client/index.html' )
 })
+app.get('/exit', (req, res) => {
+    res.sendFile(__dirname + '/views/layout-client/index.html' )
+})
+
+
 

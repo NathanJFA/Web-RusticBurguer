@@ -25,7 +25,7 @@ li a:hover{
 	margin-top: 20px;
 	margin-bottom: 20px;
 	text-align: justify;
-	height:;
+	
 	width: 100%;
 }
 
@@ -163,8 +163,9 @@ body#info a.info, #Iniciof a.iniciof, #Card a.cArd, #Ped a.ped,#End a.enD, #Tro 
 @media screen and (max-width: 780px){
 
     .rodape{
-    	margin-bottom: -1822px}
-    }}
+    	margin-bottom: -1822px
+	}
+}
 
 
 

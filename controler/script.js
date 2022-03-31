@@ -51,11 +51,9 @@ function verificar (){
 
 
 
+
+
 //carregar o gif depois joga pra tela certa
-
-
-
-
 function rede(){
 
     setTimeout(function (){}, 100)
@@ -64,7 +62,7 @@ function rede(){
 
      var  x = setInterval(function(){ ; i--
         if( i === 0){
-            window.location.href ='/main'
+            window.location.href ='/cardapio'
             clearInterval(x)
          }
       },2000)

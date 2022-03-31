@@ -779,7 +779,7 @@ label.dant-sm{
        text-decoration: none;
        box-sizing: border-box;
        transition: 0.5s;
-       transition-property: background;
+       transition-property: background; 
        border-right: 3px solid yellow;
  	}
 

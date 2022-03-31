@@ -1,23 +1,25 @@
+
 <!DOCTYPE html>
 <html lang='pt-br'>
 <head>
   <meta charset="utf-8">
-  <title>Cartões</title>
+  <title>Início</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
    <!--estilo customizado-->
-   <link rel="stylesheet" type="text/css" href="css/estilo.css">
-   <link rel="stylesheet" type="text/css" href="css/inicio.css">
+   <link rel="stylesheet" type="text/css" href="client/central-controle/css/estilo.css">
+   <link rel="stylesheet" type="text/css" href="client/central-controle/css/inicio.css">
    <!--icon-->
    <script src="https://kit.fontawesome.com/32858d8fc9.js" crossorigin="anonymous"></script>
    <!--htmlshiv-->
    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js">
    <!--normalize-->
-   <link rel="stylesheet" type="text/css" href="css/normalize.css">
-   <link rel='icon' href="icon/card.png">
+   <link rel="stylesheet" type="text/css" href="client/central-controle/css/normalize.css">
+   <link rel='icon' href="client/central-controle/icon/home.png">
+
 </head>
-<body id="Card">
+<body id="Ped">
      
    <!--Cabeçalho-->
         <!--bottão oculta menu-->
@@ -27,33 +29,33 @@
           <i class="fas fa-bars" id="sidebar_btn"></i> 
          </label>
          <div class="esquerda_area">
-          <a href="../index.html" class="logoShop">
-          <img src="../img/logo2.png" width="171">
+          <a href="/cardapio" class="logoShop">
+         <img src="client/img/logo2.png" width="171">
           <h3 class="d-none">Hamburger <span>Artesanal</span></h3>
           </a>
          </div>
 
          <div class="carrinho_icon"><!--Carrinho-->
-          <a href="layout-client/carrinho.html"><i class="fas fa-shopping-cart text-light"></i> <small class="badeg_carrinho"><span class="car">0</span> itens</small></a>
+          <a href="/carrinho"><i class="fas fa-shopping-cart text-light"></i> <small class="badeg_carrinho"><span class="car">0</span> itens</small></a>
          </div><!--fim carinho-->
 
          <div class="botao_right d-none">
-          <a href="layout-client/login_cliente.html" class="nav-link text-light"> Entrar</a>
+          <a href="/login" class="nav-link text-light"> Entrar</a>
          </div>
 
           <div class="botao_right dropdown"><!--inicio btn-right-drop-->
              <!--Menu Dropdown-->
 
-            <a href="#" class="nav-link dropdown-toggle text-light" data-toggle="dropdown">Olá, User!</a> 
+            <a href="#" class="nav-link dropdown-toggle text-light" data-toggle="dropdown">Olá, <?php echo($_SESSION['user_logado'])?>!</a> 
                   <div class="dropdown-menu">
-                      <a href="index.html" class="dropdown-item">Menu</a>
-                      <a href="pedidos.html" class="dropdown-item">Meus Pedidos</a>
-                      <a href="feedback.html" class="dropdown-item">feedback</a>
-                      <a href="../carrinho.html" class="dropdown-item">Meu carrinho</a>
-                      <a href="info.html" class="dropdown-item">Informações da Conta</a>
-                      <a href="endereco.html" class="dropdown-item">Meus Endereços</a>
-                      <a href="card.html" class="dropdown-item">Cartões</a>
-                      <a href="../index.html?exit=true" class="dropdown-item">Sair</a>
+                      <a href="menu.php" class="dropdown-item">Menu</a>
+                      <a href="pedidos.php" class="dropdown-item">Meus Pedidos</a>
+                      <a href="feedback.php" class="dropdown-item">feedback</a>
+                      <a href="../carrinho.php" class="dropdown-item">Meu carrinho</a>
+                      <a href="info.php" class="dropdown-item">Informações da Conta</a>
+                      <a href="endereco.php" class="dropdown-item">Meus Endereços</a>
+                      <a href="card.php" class="dropdown-item">Cartões</a>
+                      <a href="../index.php?exit=true" class="dropdown-item">Sair</a>
                   </div>
 
          </div><!--Fimm btn-right-drop-->
@@ -67,7 +69,7 @@
             <div class="nav_bar">
           
            <div class="carrinho_ico2">
-          <a href="layout-client/carrinho.html"><i class="fas fa-shopping-cart text-light"></i> <small class="badeg_carrinho"><span class="car">0</span> itens</small></a>
+          <a href="Layout 1/carrinho.php"><i class="fas fa-shopping-cart text-light"></i> <small class="badeg_carrinho"><span class="car">0</span> itens</small></a>
            </div>
 
            <label for="check2">
@@ -95,7 +97,8 @@
          <a href="#"><span>NaN</span></a>
          <a href="#"><span>NaN</span></a>
          <a href="#"><span>NaN</span></a>
-        
+         <a href="#"><span>NaN</span></a>
+         
       </div>
 
         <!--Animação-->
@@ -103,35 +106,33 @@
 
       <div class=""><!--inicio content-->
                
-              <div class="container-fluid lupa">
-                
-
-              <!--*********************** D E S A T I V A D O************************-->
+              <div class="lupa container-fluid">
+               
+                <!--*********************** D E S A T I V A D O************************-->
                <div class="mt-3 lupa d-none"><!--pesquisar desativado-->
                <input type="search" class="pesquisa " placeholder="O que você procurar ?">
                <button class="btn btn-dark lup"><i class="fas fa-search"></i></button>
                </div><!--fim pesquisar-->
              <!--************ F I N A L . D E S A T I V A D O************************-->
-        
-
+           
          </div>
             
-         <div class="container" id="inicio"><!--Inicio container-->
+            <div class="container" id="inicio"><!--Inicio container-->
               <div class="row"><!--Inicio row-->
                 <div class="**-danger col-md-3"> <!--inicio lado left-->
                      <div class="row"><!--inicio row interna-->
                         <div class="col-md-12"><!--inicio col-->
                         <div class="grupo"><!--inicio grupo-->
-                        <h6 class="">Olá, <span class="text">User</span>!</h6>
+                        <h6 class="">Olá, <span class="text"><?php echo($_SESSION['user_logado'])?></span>!</h6>
                         <ul>
-                        <li><a href="index.html">Menu</a></li>
-                        <li><a href="pedidos.html">Meus Pedidos</a></li>
-                        <li><a href="feedback.html">feedback</a></li>
-                        <li><a href="../carrinho.html">Meu carrinho</a></li>
-                        <li><a href="info.html">Informações da Conta</a></li>
-                        <li><a href="endereco.html">Meus Endereços</a></li>
-                        <li><a href="#" class="cArd">Cartões</a></li>
-                        <li><a href="../index.html?exit=true">Sair</a></li>
+                        <li><a href="index.php">Menu</a></li>
+                        <li><a href="#" class="ped">Meus Pedidos</a></li>
+                        <li><a href="feedback.php">feedback</a></li>
+                        <li><a href="../carrinho.php">Meu carrinho</a></li>
+                        <li><a href="info.php">Informações da Conta</a></li>
+                        <li><a href="endereco.php">Meus Endereços</a></li>
+                        <li><a href="card.php">Cartões</a></li>
+                        <li><a href="../index.php">Sair</a></li>
                         </ul>
                         </div><!--fim grupo-->
                         </div><!--fim col-->
@@ -141,35 +142,22 @@
 
                 <div class="**-primary col-md-9"><!--inicio lado right-->
                 <div class="row">
-                  <div class="card col-md-12">
-                    <div class="credito">
-                    <h3>Cartões de crédito</h3>
-                      <small class="d-none">você não possui cartões de créditos cadastrados para 
-                      compra.</small>
+                  <div class="pedido col-md-12">
+                    <div class="pedido">
+                    <h3>Pedidos Envios</h3>
+                       <!--Informações Sobre o peddio-->
 
-                      <table class="table table-responsive">
-                         <thead>
-                           <th>Cartão</th>
-                           <th>validade</th>
-                           <th>Código de segurança</th>
-                           <th>Nome no cartão</th>
-                           <th>CPF</th>
-                         </thead>
-                         <tbody>
-                           <td>5320 xxx xxxx xx31</td>
-                           <td>08/22</td>
-                           <td>xxx</td>
-                           <td>code coffe + code_café</td>
-                           <td>476.xxx.xxxx-85</td>
-                         </tbody>
-                      </table>
+                      <div  id='loc'>
+                        <ul class="list-group">
+                         <li class="list-group-item text-center">Hamburger</li>
+                         <li class="list-group-item">Preparando  <small>15:49</small></li>
+                         <li class="list-group-item">moto boy fazendo percurso <small>15:59</small></li>
+                         <li class="list-group-item">Lanche entregue <small>16:10</small></li>
 
-
+                        </ul>
+                      </div> 
                     </div>
-                     <div class="debito">
-                    <h3>Cartões de débito</h3>
-                      <small> você não possui cartões de débito cadastrados para compra.</small>
-                     </div>
+
                  </div>
                 </div><!--Fim lado right-->
               </div><!--Fim row-->
@@ -204,14 +192,7 @@
           &copy; Code + Café todos os direitos reservados.
       </div><!--copy fim-->
       </footer>
-               
 
-
-      
-  
-
-
-       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

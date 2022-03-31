@@ -1,24 +1,4 @@
 
-<!DOCTYPE html>
-<html lang='pt-br'>
-<head>
-  <meta charset="utf-8">
-  <title>Início</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-   <!--estilo customizado-->
-   <link rel="stylesheet" type="text/css" href="css/estilo.css">
-   <link rel="stylesheet" type="text/css" href="css/inicio.css">
-   <!--icon-->
-   <script src="https://kit.fontawesome.com/32858d8fc9.js" crossorigin="anonymous"></script>
-   <!--htmlshiv-->
-   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js">
-   <!--normalize-->
-   <link rel="stylesheet" type="text/css" href="css/normalize.css">
-   <link rel='icon' href="icon/home.png">
-
-</head>
 <body id="Iniciof">
      
    <!--Cabeçalho-->
@@ -29,18 +9,18 @@
           <i class="fas fa-bars" id="sidebar_btn"></i> 
          </label>
          <div class="esquerda_area">
-          <a href="../index.html" class="logoShop">
-          <img src="../img/logo2.png" width="171">
+          <a href="/cardapio" class="logoShop">
+          <img src="client/img/logo2.png" width="171">
           <h3 class="d-none">Hamburger <span>Artesanal</span></h3>
           </a>
          </div>
 
          <div class="carrinho_icon"><!--Carrinho-->
-          <a href="layout-client/carrinho.html"><i class="fas fa-shopping-cart text-light"></i> <small class="badeg_carrinho"><span class="car">0</span> itens</small></a>
+          <a href="/carrinho"><i class="fas fa-shopping-cart text-light"></i> <small class="badeg_carrinho"><span class="car">0</span> itens</small></a>
          </div><!--fim carinho-->
 
          <div class="botao_right d-none">
-          <a href="layout-client/login_cliente.html" class="nav-link text-light"> Entrar</a>     
+          <a href="/login" class="nav-link text-light"> Entrar</a>     
          </div>
 
          <div class="botao_right dropdown"><!--inicio btn-right-drop-->
@@ -49,14 +29,14 @@
     <a href="#" class="nav-link dropdown-toggle text-light" data-toggle="dropdown">Olá, User</a> 
                   <div class="dropdown-menu">
                       
-                      <a href="index.html" class="dropdown-item">Menu</a>
-                      <a href="pedidos.html" class="dropdown-item">Meus Pedidos</a>
-                      <a href="feedback.html" class="dropdown-item">feedback</a>
-                      <a href="../carrinho.html" class="dropdown-item">Meu carrinho</a>
-                      <a href="info.html" class="dropdown-item">Informações da Conta</a>
-                      <a href="endereco.html" class="dropdown-item">Meus Endereços</a>
-                      <a href="card.html" class="dropdown-item">Cartões</a>
-                      <a href='../index.html' class="dropdown-item">Sair</a>
+                      <a href="/central" class="dropdown-item">Menu</a>
+                      <a href="/central/pedidos" class="dropdown-item">Meus Pedidos</a>
+                      <a href="/central/feedback" class="dropdown-item">feedback</a>
+                      <a href="/carrinho" class="dropdown-item">Meu carrinho</a>
+                      <a href="/central/informacoes" class="dropdown-item">Informações da Conta</a>
+                      <a href="/central/endereco" class="dropdown-item">Meus Endereços</a>
+                      <a href="/central/cartoes" class="dropdown-item">Cartões</a>
+                      <a href='/exit' class="dropdown-item">Sair</a>
                   </div>
 
          </div><!--Fimm btn-right-drop-->
@@ -70,7 +50,7 @@
             <div class="nav_bar">
           
            <div class="carrinho_ico2">
-          <a href="layout-client/carrinho.html"><i class="fas fa-shopping-cart text-light"></i> <small class="badeg_carrinho"><span class="car">0</span> itens</small></a>
+          <a href="/carrinho"><i class="fas fa-shopping-cart text-light"></i> <small class="badeg_carrinho"><span class="car">0</span> itens</small></a>
            </div>
 
            <label for="check2">
@@ -126,14 +106,14 @@
                         <div class="grupo"><!--inicio grupo-->
                         <h6 class="">Olá, <span class="text">User</span>!</h6>
                         <ul>
-                        <li><a href="#" class="iniciof">Menu</a></li>
-                        <li><a href="pedidos.html">Meus Pedidos</a></li>
-                        <li><a href="feedback.html">feedback</a></li>
-                        <li><a href="../carrinho.html">Meu carrinho</a></li>
-                        <li><a href="info.html">Informações da Conta</a></li>
-                        <li><a href="endereco.html">Meus Endereços</a></li>
-                        <li><a href="card.html">Cartões</a></li>
-                        <li><a href="../index.html">Sair</a></li>
+                        <li><a href="/central" class="iniciof">Menu</a></li>
+                        <li><a href="/central/pedidos">Meus Pedidos</a></li>
+                        <li><a href="/central/feedback">feedback</a></li>
+                        <li><a href="/central/carrinho">Meu carrinho</a></li>
+                        <li><a href="/central/info">Informações da Conta</a></li>
+                        <li><a href="/central/endereco">Meus Endereços</a></li>
+                        <li><a href="/central/cartoes">Cartões</a></li>
+                        <li><a href="/exit">Sair</a></li>
                         </ul>
                         </div><!--fim grupo-->
                         </div><!--fim col-->
@@ -145,7 +125,7 @@
                 <div class="row">
                  <div class=" blocos"><!--inicio col0-->
                  <div class="">
-                 <a href="pedidos.html">
+                 <a href="/central/pedidos">
                  <center><i class="fas fa-shopping-bag"></i></center>
                     <h5>Meus pedidos</h5>
                  </a>
@@ -154,7 +134,7 @@
 
                <div class=" blocos"><!--inicio col1-->
                <div class="">
-               <a href="feedback.html">
+               <a href="/central/feedback">
                 <center><i class="fas fa-comment"></i></center>
                     <h5>feedback</h5>
                </a>
@@ -163,7 +143,7 @@
 
                <div class=" blocos"><!--inicio col2-->
                <div class="">
-                <a href="info.html">
+                <a href="/central/informacoes">
                  <center><i class="fas fa-user-circle"></i></center>
                     <h5>Informações da Conta</h5>
                 </a>
@@ -172,7 +152,7 @@
 
                <div class=" blocos"><!--inicio col3-->
                  <div class="">
-                  <a href="../carrinho.html">
+                  <a href="/carrinho">
                   <center><i class="fas fa-shopping-cart"></i></center>
                     <h5>Meu Carrinho</h5>
                   </a>
@@ -181,7 +161,7 @@
 
                <div class=" blocos"><!--inicio col4-->
                <div class="">
-                <a href="endereco.html">
+                <a href="/central/endereco">
                     <center><i class="fas fa-map-marked-alt"></i></center>
                     <h5>Meus Endereços</h5>
                 </a>
@@ -190,7 +170,7 @@
 
                <div class=" blocos"><!--inicio col5-->
                <div class="">
-                <a href="card.html">
+                <a href="/central/cartoes">
                   <center><i class="fas fa-credit-card"></i></center>
                     <h5>Cartões</h5>
                 </a>
@@ -241,4 +221,3 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
-</html>

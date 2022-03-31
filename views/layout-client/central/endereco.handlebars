@@ -1,25 +1,5 @@
 
-<!DOCTYPE html>
-<html lang='pt-br'>
-<head>
-  <meta charset="utf-8">
-  <title>Pedidos</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-   <!--estilo customizado-->
-   <link rel="stylesheet" type="text/css" href="css/estilo.css">
-   <link rel="stylesheet" type="text/css" href="css/inicio.css">
-   <!--icon-->
-   <script src="https://kit.fontawesome.com/32858d8fc9.js" crossorigin="anonymous"></script>
-   <!--htmlshiv-->
-   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js">
-   <!--normalize-->
-   <link rel="stylesheet" type="text/css" href="css/normalize.css">
-   <link rel='icon' href="icon/home.png">
-
-</head>
-<body id="Ped">
+<body id="Iniciof">
      
    <!--Cabeçalho-->
         <!--bottão oculta menu-->
@@ -29,33 +9,34 @@
           <i class="fas fa-bars" id="sidebar_btn"></i> 
          </label>
          <div class="esquerda_area">
-          <a href="../index.html" class="logoShop">
-         <img src="../img/logo2.png" width="171">
+          <a href="/cardapio" class="logoShop">
+          <img src="client/img/logo2.png" width="171">
           <h3 class="d-none">Hamburger <span>Artesanal</span></h3>
           </a>
          </div>
 
          <div class="carrinho_icon"><!--Carrinho-->
-          <a href="layout-client/carrinho.html"><i class="fas fa-shopping-cart text-light"></i> <small class="badeg_carrinho"><span class="car">0</span> itens</small></a>
+          <a href="/carrinho"><i class="fas fa-shopping-cart text-light"></i> <small class="badeg_carrinho"><span class="car">0</span> itens</small></a>
          </div><!--fim carinho-->
 
          <div class="botao_right d-none">
-          <a href="layout-client/login_cliente.html" class="nav-link text-light"> Entrar</a>
+          <a href="/login" class="nav-link text-light"> Entrar</a>     
          </div>
 
-          <div class="botao_right dropdown"><!--inicio btn-right-drop-->
+         <div class="botao_right dropdown"><!--inicio btn-right-drop-->
              <!--Menu Dropdown-->
 
-            <a href="#" class="nav-link dropdown-toggle text-light" data-toggle="dropdown">Olá, User!</a> 
+    <a href="#" class="nav-link dropdown-toggle text-light" data-toggle="dropdown">Olá, User</a> 
                   <div class="dropdown-menu">
-                      <a href="menu.html" class="dropdown-item">Menu</a>
-                      <a href="pedidos.html" class="dropdown-item">Meus Pedidos</a>
-                      <a href="feedback.html" class="dropdown-item">feedback</a>
-                      <a href="../carrinho.html" class="dropdown-item">Meu carrinho</a>
-                      <a href="info.html" class="dropdown-item">Informações da Conta</a>
-                      <a href="endereco.html" class="dropdown-item">Meus Endereços</a>
-                      <a href="card.html" class="dropdown-item">Cartões</a>
-                      <a href="../index.html?exit=true" class="dropdown-item">Sair</a>
+                      
+                      <a href="/central" class="dropdown-item">Menu</a>
+                      <a href="/central/pedidos" class="dropdown-item">Meus Pedidos</a>
+                      <a href="/central/feedback" class="dropdown-item">feedback</a>
+                      <a href="/carrinho" class="dropdown-item">Meu carrinho</a>
+                      <a href="/central/informacoes" class="dropdown-item">Informações da Conta</a>
+                      <a href="/central/endereco" class="dropdown-item">Meus Endereços</a>
+                      <a href="/central/cartao" class="dropdown-item">Cartões</a>
+                      <a href='/exit' class="dropdown-item">Sair</a>
                   </div>
 
          </div><!--Fimm btn-right-drop-->
@@ -69,7 +50,7 @@
             <div class="nav_bar">
           
            <div class="carrinho_ico2">
-          <a href="layout-client/carrinho.html"><i class="fas fa-shopping-cart text-light"></i> <small class="badeg_carrinho"><span class="car">0</span> itens</small></a>
+          <a href="/carrinho"><i class="fas fa-shopping-cart text-light"></i> <small class="badeg_carrinho"><span class="car">0</span> itens</small></a>
            </div>
 
            <label for="check2">
@@ -82,7 +63,7 @@
          <a href="#"><span>NaN</span></a>
          <a href="#"><span>NaN</span></a>
          <a href="#"><span>NaN</span></a>
-         
+         <a href="#"><span>NaN</span></a>
             
             </div>
           </div>
@@ -98,7 +79,7 @@
          <a href="#"><span>NaN</span></a>
          <a href="#"><span>NaN</span></a>
          <a href="#"><span>NaN</span></a>
-         
+
       </div>
 
         <!--Animação-->
@@ -106,15 +87,15 @@
 
       <div class=""><!--inicio content-->
                
-              <div class="lupa container-fluid">
-               
+              <div class="container-fluid lupa">
+                
                 <!--*********************** D E S A T I V A D O************************-->
                <div class="mt-3 lupa d-none"><!--pesquisar desativado-->
                <input type="search" class="pesquisa " placeholder="O que você procurar ?">
                <button class="btn btn-dark lup"><i class="fas fa-search"></i></button>
                </div><!--fim pesquisar-->
              <!--************ F I N A L . D E S A T I V A D O************************-->
-           
+
          </div>
             
             <div class="container" id="inicio"><!--Inicio container-->
@@ -125,14 +106,14 @@
                         <div class="grupo"><!--inicio grupo-->
                         <h6 class="">Olá, <span class="text">User</span>!</h6>
                         <ul>
-                        <li><a href="index.html">Menu</a></li>
-                        <li><a href="#" class="ped">Meus Pedidos</a></li>
-                        <li><a href="feedback.html">feedback</a></li>
-                        <li><a href="../carrinho.html">Meu carrinho</a></li>
-                        <li><a href="info.html">Informações da Conta</a></li>
-                        <li><a href="endereco.html">Meus Endereços</a></li>
-                        <li><a href="card.html">Cartões</a></li>
-                        <li><a href="../index.html">Sair</a></li>
+                        <li><a href="/central" class="iniciof">Menu</a></li>
+                        <li><a href="/central/pedidos">Meus Pedidos</a></li>
+                        <li><a href="/central/feedback">feedback</a></li>
+                        <li><a href="/central/carrinho">Meu carrinho</a></li>
+                        <li><a href="/central/info">Informações da Conta</a></li>
+                        <li><a href="/central/endereco">Meus Endereços</a></li>
+                        <li><a href="/central/card">Cartões</a></li>
+                        <li><a href="/exit">Sair</a></li>
                         </ul>
                         </div><!--fim grupo-->
                         </div><!--fim col-->
@@ -142,30 +123,66 @@
 
                 <div class="**-primary col-md-9"><!--inicio lado right-->
                 <div class="row">
-                  <div class="pedido col-md-12">
-                    <div class="pedido">
-                    <h3>Pedidos Envios</h3>
-                       <!--Informações Sobre o peddio-->
-
-                      <div  id='loc'>
-                        <ul class="list-group">
-                         <li class="list-group-item text-center">Hamburger</li>
-                         <li class="list-group-item">Preparando  <small>15:49</small></li>
-                         <li class="list-group-item">moto boy fazendo percurso <small>15:59</small></li>
-                         <li class="list-group-item">Lanche entregue <small>16:10</small></li>
-
-                        </ul>
-                      </div> 
+                  <div class="card col-md-12">
+                    <div class="end">
+                   
+                      <h3>Endereço Principal</h3>
+                      <!--se não tive um endereço o small tem que está ativado-->
+                      <small>Você ainda não possui nenhum produto favorito, <a href="#" class="text-danger">Adicionar endereço</a></small>
+                     
+                      
+                         <table class="table table-light table-bordered">
+                          <thead class="">
+                            <tr>
+                              <th>Nome</th>
+                              <td>?</td>
+                            </tr>
+                          </thead>
+                        <tbody>
+                          <tr>
+                            <th>Telefone</td>
+                            <td>?</td>
+                          </tr>
+                          <tr>
+                            <th>Email</td>
+                            <td>?</td>
+                          </tr>
+                          <!--
+                          <tr>
+                            <th>CEP</td>
+                            <td></td>
+                          </tr> 
+                          -->
+                          <tr>
+                            <th>Número</td>
+                            <td>?</td>
+                          </tr>
+                          <!--
+                          <tr>
+                            <th>Complemento</td>
+                            <td></td>
+                          </tr>
+                          -->
+                          <tr>
+                            <th>Bairro</td>
+                            <td>?</td>
+                          </tr>
+                          <tr>
+                            <th>Ponto de Rêferencia</td>
+                            <td>?</td>
+                          </tr>
+                        </tbody>
+                        </table>
+                        <small>Se deseja alterar o endereço, <a href="#" class="text-danger">Clique aqui</a></small>
+                      
+                    
                     </div>
-
                  </div>
                 </div><!--Fim lado right-->
               </div><!--Fim row-->
             </div><!--fim container-->
 
-       
-      </div><!--fim content-->
-        <footer class="rodape">
+        <footer class="rodape4">
           <div class="container"><!--container footer-->
           <div class="row"><!--row footer-->
             <div class="col-md-4">
@@ -192,11 +209,18 @@
           &copy; Code + Café todos os direitos reservados.
       </div><!--copy fim-->
       </footer>
+       
+      </div><!--fim content-->
+        
 
+       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
-</html>
+
+
+
+
